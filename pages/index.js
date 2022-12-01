@@ -7,9 +7,9 @@ const Page = () => {
   return (
     <Layout>
     <Container>
-      <Box borderRadius={"lg"} bg={"#9ccbb8"} p={3} mb={6} align={"center"}>
-        Hi, my name is Brandon!
-      </Box>
+      {/*<Box borderRadius={"lg"} bg={"#9ccbb8"} p={3} mb={6} align={"center"}>*/}
+      {/*  Hi, my name is Brandon!*/}
+      {/*</Box>*/}
 
       <Box display={{md: 'flex'}}>
         <Box flexGrow={1}>
@@ -60,7 +60,10 @@ const Page = () => {
         <Paragraph>
           <Menu>
             <MenuItem>
-              test
+              Software Engineer Intern @ Securian
+            </MenuItem>
+            <MenuItem>
+              Software Engineer Intern @ UnitedHealth Group
             </MenuItem>
             <MenuItem>
               Data Analytics Intern @ Mobalytics

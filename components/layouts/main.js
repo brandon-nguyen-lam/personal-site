@@ -9,10 +9,11 @@ const Main = ({ children, router }) => {
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <meta name = "description" content = "Brandon Lam's personal website" />
         <meta name = "author" content = "Brandon Lam" />
-        <meta rel={"icon"} href={"/favicon.ico"} type={"image/x-icon"}/>
+        <meta rel={"icon"} href={"/favicon.ico"}/>
         <meta rel={"apple-touch-icon"} href={"/apple-touch-icon.png"} />
 
-        <title>Brandon Lam - Homepage</title>
+
+        <title>Brandon's Site</title>
 
       </Head>
 

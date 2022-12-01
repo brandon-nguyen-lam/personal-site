@@ -18,23 +18,20 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+
+const LinkItem = ({ href, path, children }) => {
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        {...props}
-      >
+        color={"#202023"}
+        >
         {children}
       </Link>
     </NextLink>
   )
 }
+
 const Navbar = props => {
   const { path } = props
 
@@ -62,7 +59,7 @@ const Navbar = props => {
             <HStack>
               <Image src={"/images/peepoSit.png"}
                      width={10} height={10} />
-              <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+              <Text color={useColorModeValue("#202023", "#202023")}
                     fontFamily={'M PLUS Rounded 1c'}
                     fontWeight="Bold"
                     ml={3}
@@ -84,15 +81,15 @@ const Navbar = props => {
         flexGrow={1}
         mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/projects" path={path}>
+          <Link as={NextLink} href="/projects" color="black" onHover={{textDecoration:"underline"}} passHref>
             Projects
-          </LinkItem>
-          <LinkItem href="/blog" path={path}>
+          </Link>
+          <Link as={NextLink} href="/blog" color="black" onHover={{textDecoration:"underline"}} passHref>
             Blog
-          </LinkItem>
-          <LinkItem href="/contact" path={path}>
+          </Link>
+          <Link as={NextLink} href="/contact" color="black" onHover={{textDecoration:"underline"}} passHref>
             Contact
-          </LinkItem>
+          </Link>
         </Stack>
 
         <Box flex={1} align={"left"}>
