@@ -1,0 +1,38 @@
+import { Container, Heading, SimpleGrid, Divider, Box } from '@chakra-ui/react'
+import Section from '../components/section'
+import { WorkGridItem } from '../components/grid-item'
+
+import thumbAnnote from '../public/images/Annote.png'
+import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
+
+const Projects = () => {
+  return (
+    <Container>
+      <Heading as="h3" fontSize={20} mb={4}>
+        Projects
+      </Heading>
+
+      <SimpleGrid columns={[1, 1, 2]}>
+        <Section>
+          <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
+            Live transcription note taking app.
+            First place at HackUIowa.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+    <SimpleGrid columns={[1, 1, 2]}>
+        <Section>
+          <WorkGridItem
+            href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
+            title="TFT Simulator"
+            thumbnail={thumbRollingOddsPerLevel}
+            >
+            Replicates Riot Game's Teamfight Tactics and calculates the odds of rolling units.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+    </Container>
+  )
+}
+
+export default Projects
