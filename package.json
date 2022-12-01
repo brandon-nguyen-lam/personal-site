@@ -1,0 +1,30 @@
+{
+  "name": "Brandon's Site",
+  "version": "1.0.0",
+  "description": "portfolio website for brandon lam",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Brandon Lam",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.15",
+    "next": "^13.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
+    "i": "^0.3.7",
+    "prettier": "^2.8.0"
+  }
+}
