@@ -4,11 +4,12 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbAnnote from '../public/images/Annote.png'
 import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
+import Footer from "../components/footer";
 
 const Projects = () => {
   return (
-    <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+    <Container bg="white">
+      <Heading as="h3" fontSize={30} mb={4}>
         Projects
       </Heading>
 

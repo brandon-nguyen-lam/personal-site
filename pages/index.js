@@ -1,16 +1,14 @@
-import { Container, Box, Heading, Image, MenuItem, Menu, Center } from "@chakra-ui/react";
+import { Container, Box, Heading, Image, MenuItem, Menu, Center, Link } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
+import Footer from "../components/footer";
 
 const Page = () => {
   return (
     <Layout>
-    <Container>
-      {/*<Box borderRadius={"lg"} bg={"#9ccbb8"} p={3} mb={6} align={"center"}>*/}
-      {/*  Hi, my name is Brandon!*/}
-      {/*</Box>*/}
-
+    <Container bg="white"
+    paddingTop="15px">
       <Box display={{md: 'flex'}}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -27,7 +25,7 @@ const Page = () => {
           >
           <Image
             src={"images/blamPhoto.png"}
-            borderColor="whiteAlpha.800"
+            borderColor="black"
             borderWidth={2}
             borderStyle="solid"
             borderRadius="full"
@@ -48,8 +46,8 @@ const Page = () => {
           Robotics, Science Olympiad, Model Rocketry, and volunteering at
           the Science Museum of Minnesota. After taking my first CS class,
           I fell in love with it and that's led me to where I am today.
-          Outside of school, I enjoy playing games like TFT and
-          Hearthstone, where I've been top 100 in America in both games.
+          Outside of school, I enjoy playing strategy games like TFT and
+          Hearthstone, where I've been top 100 in North America for both games.
         </Paragraph>
         </Section>
 
@@ -71,10 +69,6 @@ const Page = () => {
           </Menu>
         </Paragraph>
       </Section>
-      <Center
-      fontSize="12px"
-
-      >Website inspired by Takuya Matsuyama</Center>
     </Container>
       </Layout>
   )

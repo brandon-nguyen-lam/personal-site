@@ -40,9 +40,10 @@ const Navbar = props => {
     position="fixed"
     as="nav"
     w="108%"
-    bg={useColorModeValue("#5f967c", "#5f967c")}
-    style={{ backdropFilter: 'blur(10px)' }}
+    bg={useColorModeValue("#white", "white")}
     zIndex={2}
+    borderColor="#232320"
+    borderBottomWidth="1px"
       {...props}
     >
       <Container
@@ -56,17 +57,17 @@ const Navbar = props => {
         <Link href="/" scroll={false}>
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            <HStack>
+            <HStack paddingLeft={25} justifyContent="flex-start">
               <Image src={"/images/peepoSit.png"}
                      width={10} height={10} />
-              <Text color={useColorModeValue("#202023", "#202023")}
-                    fontFamily={'M PLUS Rounded 1c'}
-                    fontWeight="Bold"
-                    ml={3}
-                    px={1}
-              >
-                Brandon Lam
-              </Text>
+                <Text color={useColorModeValue("black", "black")}
+                      fontFamily={'M PLUS Rounded 1c'}
+                      fontWeight="Bold"
+                      ml={3}
+                      px={1}
+                >
+                  Brandon Lam
+                </Text>
             </HStack>
           </Heading>
         </Flex>
@@ -92,7 +93,7 @@ const Navbar = props => {
           </Link>
         </Stack>
 
-        <Box flex={1} align={"left"}>
+        <Box flex={1} align={"left"} >
           <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
             <Menu>
               <MenuButton
