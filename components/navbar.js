@@ -40,7 +40,7 @@ const Navbar = props => {
     position="fixed"
     as="nav"
     w="108%"
-    bg={useColorModeValue("#white", "white")}
+    bg={useColorModeValue("#ffffff", "#ffffff")}
     zIndex={2}
     borderColor="#232320"
     borderBottomWidth="1px"
@@ -57,7 +57,7 @@ const Navbar = props => {
         <Link href="/" scroll={false}>
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            <HStack paddingLeft={25} justifyContent="flex-start">
+            <HStack paddingLeft={105} justifyContent="flex-start">
               <Image src={"/images/peepoSit.png"}
                      width={10} height={10} />
                 <Text color={useColorModeValue("black", "black")}

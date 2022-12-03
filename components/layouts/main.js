@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../navbar'
 import Footer from '../footer'
 import { Box, Container, Flex, VStack } from "@chakra-ui/react";
+import Frog from "../frog";
 
 const Main = ({ children, router }) => {
   return (
@@ -21,6 +22,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
+        <Frog/>
         {children}
         <Footer />
 

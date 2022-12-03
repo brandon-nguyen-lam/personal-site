@@ -48,6 +48,7 @@ const Page = () => {
           I fell in love with it and that's led me to where I am today.
           Outside of school, I enjoy playing strategy games like TFT and
           Hearthstone, where I've been top 100 in North America for both games.
+
         </Paragraph>
         </Section>
 
