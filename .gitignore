@@ -1,3 +1,6 @@
 .next
 .idea
 node_modules
+dist
+.vercel
+.env
