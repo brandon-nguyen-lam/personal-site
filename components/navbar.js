@@ -18,7 +18,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-
 const LinkItem = ({ href, path, children }) => {
   return (
     <NextLink href={href} passHref scroll={false}>
@@ -57,7 +56,7 @@ const Navbar = props => {
         <Link href="/" scroll={false}>
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            <HStack paddingLeft={105} justifyContent="flex-start">
+            <HStack paddingLeft={115} justifyContent="flex-start">
               <Image src={"/images/peepoSit.png"}
                      width={10} height={10} />
                 <Text color={useColorModeValue("black", "black")}
@@ -88,8 +87,8 @@ const Navbar = props => {
           <Link as={NextLink} href="/blog" color="black" onHover={{textDecoration:"underline"}} passHref>
             Blog
           </Link>
-          <Link as={NextLink} href="/contact" color="black" onHover={{textDecoration:"underline"}} passHref>
-            Contact
+          <Link as={NextLink} href="https://github.com/brandon-nguyen-lam/personal-site" color="black" onHover={{textDecoration:"underline"}} passHref>
+            Source
           </Link>
         </Stack>
 

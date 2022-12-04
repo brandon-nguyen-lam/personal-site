@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider, Box } from '@chakra-ui/react'
+import {Container, Heading, SimpleGrid, Divider, Box, Center} from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
@@ -9,9 +9,19 @@ import Footer from "../components/footer";
 const Projects = () => {
   return (
     <Container bg="white">
-      <Heading as="h3" fontSize={30} mb={4}>
-        Projects
-      </Heading>
+        <Center>
+            <Heading
+                as="h3"
+                fontSize={35}
+                mb={4}
+                align="center"
+                textDecoration={"underline"}
+                textUnderlineOffset={"10px"}
+                textDecorationColor={"#5F967C"}
+            >
+                Projects
+            </Heading>
+        </Center>
 
       <SimpleGrid columns={[1, 1, 2]}>
         <Section>
