@@ -100,7 +100,7 @@ const Page = () => {
           <Link href="https://github.com/brandon-nguyen-lam" textUnderlineOffset={1000}>
             <Button
                 variant="ghost"
-                colorScheme="whatsapp"
+                colorScheme="green"
                 leftIcon={<Icon as={IoLogoGithub} />}
             >
               brandon-nguyen-lam
@@ -111,7 +111,7 @@ const Page = () => {
           <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" textUnderlineOffset={1000}>
                 <Button
                     variant="ghost"
-                    colorScheme="whatsapp"
+                    colorScheme="teal"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                     brandon-nguyen-lam
