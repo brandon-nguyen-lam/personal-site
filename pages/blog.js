@@ -18,7 +18,7 @@ const Blog = () => (
                 textDecoration={"underline"}
                 textUnderlineOffset={"10px"}
                 textDecorationColor={"#5F967C"}
-                color={"white"}
+                color={"black"}
             >
                 Blog
             </Heading>

@@ -3,14 +3,14 @@ import { Box, Container, Flex, HStack, Link, VStack } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <VStack>
-    <Container bg ="#202023">
+    <Container bg ="white">
       <VStack justifyContent="space-between">
         <Link href="https://www.craftz.dog/">
-          <Box align="center" opacity={0.3} fontSize={"sm"} color="white">
+          <Box align="center" opacity={0.3} fontSize={"sm"} color="black">
             Website inspired by Takuya Matsuyama
           </Box>
         </Link>
-      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"white"}> last updated 12/1/2022</Box>
+      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> last updated 12/1/2022</Box>
       </VStack>
     </Container>
       <Box

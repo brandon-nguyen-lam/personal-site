@@ -1,20 +1,29 @@
-import { Container, Box, Heading, Image, MenuItem, Menu, Center, Link } from "@chakra-ui/react";
+import {Container, Box, Heading, Image, MenuItem, Menu, Center, Link, ListItem, List, Button, Icon} from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
-import Footer from "../components/footer";
+import { IoLogoGithub, IoMail, IoLogoLinkedin } from 'react-icons/io5'
+
 
 const Page = () => {
   return (
     <Layout>
-    <Container bg="#202023"
+    <Container bg="white"
     paddingTop="15px">
       <Box display={{md: 'flex'}}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title" color={"white"}>
+          <Heading
+              as="h2"
+              variant="page-title"
+              color={"black"}
+              textDecoration={"underline"}
+              textUnderlineOffset={"4px"}
+              textDecorationColor={"#5F967C"}
+              textDecorationThickness={"4px"}
+          >
             Brandon Lam
           </Heading>
-          <Box color={"white"}>Aspiring Software Engineer. Currently a Junior at the University of Minnesota - Twin Cities
+          <Box color={"black"}>Aspiring Software Engineer. Currently a Junior at the University of Minnesota - Twin Cities
             double majoring in Computer Science and Data Science.</Box>
         </Box>
         <Box
@@ -25,7 +34,7 @@ const Page = () => {
           >
           <Image
             src={"images/blamPhoto.png"}
-            borderColor="white"
+            borderColor="black"
             borderWidth={2}
             borderStyle="solid"
             borderRadius="full"
@@ -37,7 +46,7 @@ const Page = () => {
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title" color={"white"}>
+        <Heading as="h3" variant="section-title" color={"black"}>
           About Me
         </Heading>
         <Paragraph>
@@ -53,7 +62,7 @@ const Page = () => {
         </Section>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title" color={"white"}>
+        <Heading as="h3" variant="section-title" color={"black"}>
           Work Experience
         </Heading>
         <Paragraph>
@@ -70,6 +79,47 @@ const Page = () => {
           </Menu>
         </Paragraph>
       </Section>
+    <Section delay={0.2}>
+      <Heading as="h3" variant="section-title" color={"black"}>
+        Contact
+      </Heading>
+      <List>
+        <ListItem>
+          <Link href="https://github.com/brandon-nguyen-lam" target="_blank">
+            <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+            >
+              @brandon-nguyen-lam
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+            <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" target="_blank">
+                <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                    @brandon-nguyen-lam
+                </Button>
+            </Link>
+        </ListItem>
+        <ListItem>
+            <Link href="mailto:brandonnguyenlam@gmail.com" target="_blank">
+                <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<Icon as={IoMail} />}
+                >
+                    brandonnguyenlam@gmail.com
+                </Button>
+            </Link>
+        </ListItem>
+        </List>
+
+    </Section>
     </Container>
       </Layout>
   )

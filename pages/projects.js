@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 
 const Projects = () => {
   return (
-    <Container bg="#202023">
+    <Container bg="white">
         <Center>
             <Heading
                 as="h3"
@@ -18,7 +18,7 @@ const Projects = () => {
                 textDecoration={"underline"}
                 textUnderlineOffset={"10px"}
                 textDecorationColor={"#5F967C"}
-                color={"#ffffff"}
+                color={"#black"}
             >
                 Projects
             </Heading>
