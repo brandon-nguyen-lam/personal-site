@@ -108,15 +108,16 @@ const Page = () => {
             </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" textUnderlineOffset={1000}>
+          {/*<Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" textUnderlineOffset={1000}>*/}
                 <Button
                     variant="ghost"
                     colorScheme="teal"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
+                    onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
                     brandon-nguyen-lam
                 </Button>
-          </Link>
+          {/*</Link>*/}
         </ListItem>
         <ListItem>
           <Link href={"mailto:brandonnguyenlam@gmail.com"} textUnderlineOffset={1000}>
