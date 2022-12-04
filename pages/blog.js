@@ -1,10 +1,9 @@
-import {Container, Heading, SimpleGrid, Divider, Center} from '@chakra-ui/react'
+import {Container, Heading, SimpleGrid, Center} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 import thumbAnnote from '../public/images/Annote.png'
-import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
 
 const Blog = () => (
     <Layout title="Works">
@@ -23,8 +22,9 @@ const Blog = () => (
                 Blog
             </Heading>
             </Center>
+            <Center>Collection of thoughts from an illiterate CS major.</Center>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
                 <Section>
                     <GridItem
                         id="inkdrop"

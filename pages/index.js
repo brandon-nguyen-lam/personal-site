@@ -1,4 +1,4 @@
-import {Container, Box, Heading, Image, MenuItem, Menu, Center, Link, ListItem, List, Button, Icon} from "@chakra-ui/react";
+import {Container, Box, Heading, Image, MenuItem, Menu, Link, ListItem, List, Button, Icon} from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
@@ -31,6 +31,7 @@ const Page = () => {
           mt={{ base:4, md: 0 }}
           ml={{ md: 6 }}
           align="center"
+          paddingTop={"10px"}
           >
           <Image
             src={"images/blamPhoto.png"}
@@ -88,7 +89,7 @@ const Page = () => {
           <Link href="https://github.com/brandon-nguyen-lam" target="_blank">
             <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="green"
                 leftIcon={<Icon as={IoLogoGithub} />}
             >
               @brandon-nguyen-lam
@@ -99,7 +100,7 @@ const Page = () => {
             <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" target="_blank">
                 <Button
                     variant="ghost"
-                    colorScheme="teal"
+                    colorScheme="green"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                     @brandon-nguyen-lam
@@ -110,7 +111,7 @@ const Page = () => {
             <Link href="mailto:brandonnguyenlam@gmail.com" target="_blank">
                 <Button
                     variant="ghost"
-                    colorScheme="teal"
+                    colorScheme="green"
                     leftIcon={<Icon as={IoMail} />}
                 >
                     brandonnguyenlam@gmail.com

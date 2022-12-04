@@ -1,10 +1,9 @@
-import {Container, Heading, SimpleGrid, Divider, Box, Center} from '@chakra-ui/react'
+import {Container, Heading, SimpleGrid, Center} from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbAnnote from '../public/images/Annote.png'
 import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
-import Footer from "../components/footer";
 
 const Projects = () => {
   return (
@@ -24,7 +23,9 @@ const Projects = () => {
             </Heading>
         </Center>
 
-      <SimpleGrid columns={[1, 1, 2]}>
+        <Center>Here are some of my projects.</Center>
+
+      <SimpleGrid columns={[1, 1, 2]} paddingTop={"10px"}>
         <Section>
           <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
             Live transcription note taking app.

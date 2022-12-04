@@ -18,21 +18,21 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-const LinkItem = ({ href, path, children }) => {
-  return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        color={"#202023"}
-        >
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
+// const LinkItem = ({ href, path, children }) => {
+//   return (
+//     <NextLink href={href} passHref scroll={false}>
+//       <Link
+//         p={2}
+//         color={"#202023"}
+//         >
+//         {children}
+//       </Link>
+//     </NextLink>
+//   )
+// }
 
 const Navbar = props => {
-  const { path } = props
+  // const { path } = props
 
   return (
     <Box
@@ -82,15 +82,27 @@ const Navbar = props => {
         flexGrow={1}
         mt={{ base: 4, md: 0 }}
         >
-          <Link as={NextLink} href="/projects" color="black" onHover={{textDecoration:"underline"}} passHref>
+          <Link
+              as={NextLink}
+              href="/projects"
+              color="black"
+              style={{ textDecorationColor: "#5F967C" }}
+          passHref>
             Projects
           </Link>
-          <Link as={NextLink} href="/blog" color="black" onHover={{textDecoration:"underline"}} passHref>
+          <Link
+              as={NextLink}
+              href="/blog"
+              color="black"
+              style={{ textDecorationColor: "#5F967C" }}
+              passHref>
             Blog
           </Link>
           <Link as={NextLink}
                 href="https://github.com/brandon-nguyen-lam/personal-site"
-                color="black" onHover={{textDecoration:"underline"}} passHref>
+                color="black"
+                style={{ textDecorationColor: "#5F967C" }}
+                passHref>
             Source
           </Link>
         </Stack>
