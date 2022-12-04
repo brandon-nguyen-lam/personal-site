@@ -7,7 +7,8 @@ import {
   List,
   Button,
   Icon,
-  UnorderedList, Link
+  UnorderedList,
+  Link
 } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -111,38 +112,6 @@ const Page = () => {
             </Button>
             </Link>
         </ListItem>
-
-        <ListItem>
-          <Link
-              href="https://github.com/brandon-nguyen-lam"
-              textUnderlineOffset={1000}
-              target={"_blank"}
-          >
-            <Button
-                variant="ghost"
-                colorScheme="blackAlpha"
-                leftIcon={<Icon as={IoLogoGithub} />}
-            >
-              brandon-nguyen-lam2
-            </Button>
-          </Link>
-        </ListItem>
-
-        <ListItem>
-          <Link
-              href="https://github.com/brandon-nguyen-lam"
-              textUnderlineOffset={1000}
-              target={"_blank"}
-          >
-            <Button
-                variant="ghost"
-
-                leftIcon={<Icon as={IoLogoGithub} />}
-            >
-              brandon-nguyen-lam3
-            </Button>
-          </Link>
-        </ListItem>
         <ListItem>
           <Link
               href="https://www.linkedin.com/in/brandon-nguyen-lam/"
@@ -178,3 +147,4 @@ const Page = () => {
 }
 
 export default Page
+export { getServerSideProps } from '../components/chakra'

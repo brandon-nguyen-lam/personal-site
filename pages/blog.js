@@ -27,7 +27,7 @@ const Blog = () => (
             <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
                 <Section>
                     <GridItem
-                        id="inkdrop"
+                        id="memories"
                         title="Memories"
                         thumbnail={thumbAnnote}>
 
