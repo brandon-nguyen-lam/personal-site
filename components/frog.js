@@ -71,7 +71,7 @@ const Frog = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, urlFrogGLB, {
+      loadGLTFModel(scene, '/frog.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
