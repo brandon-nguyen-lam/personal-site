@@ -12,7 +12,6 @@ const Frog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlFrogGLB = (process.env.NODE_ENV === 'production' ? 'https://skfb.ly/6UDrX' : '') + '/frog.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -88,7 +87,7 @@ const Frog = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 15
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 7
 
           camera.position.y = 10
           camera.position.x =
