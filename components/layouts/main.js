@@ -6,7 +6,7 @@ import Frog from "../frog";
 
 const Main = ({ children, router }) => {
   return (
-    <VStack as="main" pb={8} bg="#ffffff">
+    <VStack as="main" pb={8} bg="#202023">
       <Head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <meta name = "description" content = "Brandon Lam's personal website" />

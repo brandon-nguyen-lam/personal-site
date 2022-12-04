@@ -39,8 +39,9 @@ const Navbar = props => {
     position="fixed"
     as="nav"
     w="108%"
-    bg={useColorModeValue("#ffffff", "#ffffff")}
+    bg={useColorModeValue("#20202380", "#20202380")}
     zIndex={2}
+    css={{ backdropFilter: 'blur(10px)' }}
     borderColor="#232320"
     borderBottomWidth="1px"
       {...props}
@@ -59,7 +60,7 @@ const Navbar = props => {
             <HStack paddingLeft={115} justifyContent="flex-start">
               <Image src={"/images/peepoSit.png"}
                      width={10} height={10} />
-                <Text color={useColorModeValue("black", "black")}
+                <Text color={useColorModeValue("white", "white")}
                       fontFamily={'M PLUS Rounded 1c'}
                       fontWeight="Bold"
                       ml={3}
@@ -81,13 +82,13 @@ const Navbar = props => {
         flexGrow={1}
         mt={{ base: 4, md: 0 }}
         >
-          <Link as={NextLink} href="/projects" color="black" onHover={{textDecoration:"underline"}} passHref>
+          <Link as={NextLink} href="/projects" color="white" onHover={{textDecoration:"underline"}} passHref>
             Projects
           </Link>
-          <Link as={NextLink} href="/blog" color="black" onHover={{textDecoration:"underline"}} passHref>
+          <Link as={NextLink} href="/blog" color="white" onHover={{textDecoration:"underline"}} passHref>
             Blog
           </Link>
-          <Link as={NextLink} href="https://github.com/brandon-nguyen-lam/personal-site" color="black" onHover={{textDecoration:"underline"}} passHref>
+          <Link as={NextLink} href="https://github.com/brandon-nguyen-lam/personal-site" color="white" onHover={{textDecoration:"underline"}} passHref>
             Source
           </Link>
         </Stack>

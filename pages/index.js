@@ -7,15 +7,15 @@ import Footer from "../components/footer";
 const Page = () => {
   return (
     <Layout>
-    <Container bg="white"
+    <Container bg="#202023"
     paddingTop="15px">
       <Box display={{md: 'flex'}}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading as="h2" variant="page-title" color={"white"}>
             Brandon Lam
           </Heading>
-          <p>Aspiring Software Engineer. Currently a Junior at the University of Minnesota - Twin Cities
-            double majoring in Computer Science and Data Science.</p>
+          <Box color={"white"}>Aspiring Software Engineer. Currently a Junior at the University of Minnesota - Twin Cities
+            double majoring in Computer Science and Data Science.</Box>
         </Box>
         <Box
           flexShrink={0}
@@ -25,7 +25,7 @@ const Page = () => {
           >
           <Image
             src={"images/blamPhoto.png"}
-            borderColor="black"
+            borderColor="white"
             borderWidth={2}
             borderStyle="solid"
             borderRadius="full"
@@ -37,7 +37,7 @@ const Page = () => {
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title" >
+        <Heading as="h3" variant="section-title" color={"white"}>
           About Me
         </Heading>
         <Paragraph>
@@ -53,7 +53,7 @@ const Page = () => {
         </Section>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title" >
+        <Heading as="h3" variant="section-title" color={"white"}>
           Work Experience
         </Heading>
         <Paragraph>
