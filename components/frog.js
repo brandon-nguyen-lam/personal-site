@@ -12,7 +12,7 @@ const Frog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlFrogGLB = (process.env.NODE_ENV === 'production' ? 'https://sketchfab.com/3d-models/froggy-terranium-440aa0231c0b4304b04481c6ca365a4f#download' : '') + '/frog.glb'
+  const urlFrogGLB = (process.env.NODE_ENV === 'production' ? 'https://skfb.ly/6UDrX' : '') + '/frog.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
