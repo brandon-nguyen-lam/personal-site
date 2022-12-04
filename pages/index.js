@@ -1,4 +1,14 @@
-import {Container, Box, Heading, Image, MenuItem, Menu, Link, ListItem, List, Button, Icon} from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  ListItem,
+  List,
+  Button,
+  Icon,
+  UnorderedList
+} from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
@@ -66,19 +76,20 @@ const Page = () => {
         <Heading as="h3" variant="section-title" color={"black"}>
           Work Experience
         </Heading>
-        <Paragraph>
-          <Menu>
-            <MenuItem>
-              Software Engineer Intern @ Securian
-            </MenuItem>
-            <MenuItem>
-              Software Engineer Intern @ UnitedHealth Group
-            </MenuItem>
-            <MenuItem>
-              Data Analytics Intern @ Mobalytics
-            </MenuItem>
-          </Menu>
-        </Paragraph>
+          <UnorderedList>
+            <ListItem>
+                SWE Intern @ Securian Financial - Jun 2022 to Aug 2022
+            </ListItem>
+            <ListItem>
+                SWE Intern @ UnitedHealth Group - Jan 2021 to Jun 2022
+            </ListItem>
+            <ListItem>
+              Undergraduate Teaching Assistant @ UMN - Jan 2022 to Present
+            </ListItem>
+            <ListItem>
+                Data Analytics Intern @ Mobalytics - Sep 2022 to Nov 2022
+            </ListItem>
+          </UnorderedList>
       </Section>
     <Section delay={0.2}>
       <Heading as="h3" variant="section-title" color={"black"}>
@@ -86,37 +97,35 @@ const Page = () => {
       </Heading>
       <List>
         <ListItem>
-          <Link href="https://github.com/brandon-nguyen-lam" target="_blank">
             <Button
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<Icon as={IoLogoGithub} />}
+                onClick={() => window.open("https://github.com/brandon-nguyen-lam")}
             >
-              @brandon-nguyen-lam
+              brandon-nguyen-lam
             </Button>
-          </Link>
         </ListItem>
         <ListItem>
-            <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" target="_blank">
                 <Button
                     variant="ghost"
                     colorScheme="green"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
+                    onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
-                    @brandon-nguyen-lam
+                    brandon-nguyen-lam
                 </Button>
-            </Link>
         </ListItem>
         <ListItem>
-            <Link href="mailto:brandonnguyenlam@gmail.com" target="_blank">
                 <Button
                     variant="ghost"
                     colorScheme="green"
                     leftIcon={<Icon as={IoMail} />}
+                    onClick={() => window.location.href = "mailto: brandonnguyenlam@gmail.com"}
+
                 >
                     brandonnguyenlam@gmail.com
                 </Button>
-            </Link>
         </ListItem>
         </List>
 

@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+  import { forwardRef } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 
 export const FrogSpinner = () => (

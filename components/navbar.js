@@ -54,7 +54,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Link href="/" scroll={false} textUnderlineOffset={"1000px"}>
+        <Link href="/" scroll="false" textUnderlineOffset={"1000px"}>
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
             <HStack paddingLeft={115} justifyContent="flex-start">

@@ -28,8 +28,8 @@ const Projects = () => {
       <SimpleGrid columns={[1, 1, 2]} paddingTop={"10px"}>
         <Section>
           <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
-            Live transcription note taking app.
-            First place at HackUIowa.
+            Live transcription note taking app for students that has the ability to record lectures
+              and summarize them. First place overall and best accessibility hack @ HackUIowa 2022.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -40,7 +40,7 @@ const Projects = () => {
             title="TFT Simulator"
             thumbnail={thumbRollingOddsPerLevel}
             >
-            Replicates Riot Game's Teamfight Tactics and calculates the odds of rolling units.
+            Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
