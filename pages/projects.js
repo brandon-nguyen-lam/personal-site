@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbAnnote from '../public/images/Annote.png'
 import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
 import thumbSpotifyRecommender from '../public/images/spotify.jpg'
+import thumbDog from '../public/images/dog.png'
 
 const Projects = () => {
   return (
@@ -52,6 +53,15 @@ const Projects = () => {
                 Recommends users songs based on their listening history using Spotify API.
             </WorkGridItem>
         </Section>
+          <Section delay={0.4}>
+              <WorkGridItem
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  title="Cute Dog"
+                  thumbnail={thumbDog}
+              >
+                  Here for symmetry. Click to see a cute dog video.
+              </WorkGridItem>
+          </Section>
 
     </SimpleGrid>
     </Container>
