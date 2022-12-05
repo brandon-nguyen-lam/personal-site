@@ -115,19 +115,20 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="solid"
                 aria-label={"Options"}
+                bg="white"
               />
               <MenuList>
               <NextLink href="/" passHref>
-                <MenuItem>Home</MenuItem>
+                <MenuItem bg="white">Home</MenuItem>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem bg="white">Projects</MenuItem>
               </NextLink>
               <NextLink href="/blog" passHref>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem bg="white">Blog</MenuItem>
               </NextLink>
               <NextLink href="/contact" passHref>
-                <MenuItem>Contact</MenuItem>
+                <MenuItem bg="white">Contact</MenuItem>
               </NextLink>
               </MenuList>
             </Menu>

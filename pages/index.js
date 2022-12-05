@@ -102,10 +102,11 @@ const Page = () => {
               href="https://github.com/brandon-nguyen-lam"
               textUnderlineOffset={1000}
               target={"_blank"}
+              color="green"
           >
             <Button
                 variant="ghost"
-                colorScheme="green"
+                colorScheme="Green"
                 leftIcon={<Icon as={IoLogoGithub} />}
             >
               brandon-nguyen-lam
@@ -116,22 +117,27 @@ const Page = () => {
           <Link
               href="https://www.linkedin.com/in/brandon-nguyen-lam/"
               textUnderlineOffset={1000}
-              target="_blank">
+              target="_blank"
+              color="green"
+          >
+
                 <Button
                     variant="ghost"
-                    colorScheme="green"
+                    colorScheme="Green"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
-                    // onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
                     brandon-nguyen-lam
                 </Button>
           </Link>
         </ListItem>
         <ListItem>
-          <Link href={"mailto:brandonnguyenlam@gmail.com"} textUnderlineOffset={1000}>
+          <Link href={"mailto:brandonnguyenlam@gmail.com"}
+                textUnderlineOffset={1000}
+                color={"green"}
+          >
                 <Button
                     variant="ghost"
-                    colorScheme="whatsapp"
+                    colorScheme="Green"
                     leftIcon={<Icon as={IoMail} />}
                 >
                     brandonnguyenlam@gmail.com

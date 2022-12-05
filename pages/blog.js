@@ -3,10 +3,10 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbAnnote from '../public/images/Annote.png'
+import thumbMemories from '../public/images/memoriesthumbnail.jpg'
 
 const Blog = () => (
-    <Layout title="Works">
+    <Layout title="Blog">
         <Container>
             <Center>
             <Heading
@@ -29,7 +29,7 @@ const Blog = () => (
                     <GridItem
                         id="memories"
                         title="Memories"
-                        thumbnail={thumbAnnote}>
+                        thumbnail={thumbMemories}>
 
                     </GridItem>
                 </Section>

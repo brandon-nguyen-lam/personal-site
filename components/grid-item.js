@@ -13,7 +13,7 @@ export const GridItem = ({ children, id, title, thumbnail }) => (
                     className="grid-item-thumbnail"
                     placeholder="blur"
                 />
-                <LinkOverlay href={`/works/${id}`}>
+                <LinkOverlay href={`/blog/${id}`}>
                     <Text mt={2} fontSize={20} color={"black"}>
                         {title}
                     </Text>
