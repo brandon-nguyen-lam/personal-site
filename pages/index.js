@@ -79,13 +79,13 @@ const Page = () => {
         </Heading>
           <UnorderedList>
             <ListItem>
-                SWE Intern @ Securian Financial - Jun 2022 to Aug 2022
+                SWE Intern @ Securian Financial - Jun 2023 to Aug 2023
             </ListItem>
             <ListItem>
-                SWE Intern @ UnitedHealth Group - Jan 2021 to Jun 2022
+                SWE Intern @ UnitedHealth Group - Jan 2023 to Jun 2023
             </ListItem>
             <ListItem>
-              Undergraduate Teaching Assistant @ UMN - Jan 2022 to Present
+              Undergraduate Teaching Assistant @ UMN - Jan 2023 to Present
             </ListItem>
             <ListItem>
                 Data Analytics Intern @ Mobalytics - Sep 2022 to Nov 2022
