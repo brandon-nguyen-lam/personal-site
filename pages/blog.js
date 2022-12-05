@@ -24,7 +24,7 @@ const Blog = () => (
             </Center>
             <Center>Collection of thoughts from an illiterate CS major.</Center>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
+            <SimpleGrid columns={[1]} gap={6} paddingTop={"10px"}>
                 <Section>
                     <GridItem
                         id="memories"

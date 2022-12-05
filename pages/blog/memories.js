@@ -28,10 +28,10 @@ const Memories = () => (
                     Brandon Lam • 5 minute read • 12/5/2022
                 </Heading>
                 </Center>
-
             </Section>
             <Section delay={0.3}>
             <Box>
+                writing atm, will be done soon!!!
                 Hi there my name is Brandon and this is the first blog post
                 Hi there my name is Brandon and this is the first blog post
                 Hi there my name is Brandon and this is the first blog post
