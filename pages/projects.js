@@ -25,24 +25,22 @@ const Projects = () => {
 
         <Center>Here are some of my projects.</Center>
 
-      <SimpleGrid columns={[1, 1, 2]} paddingTop={"10px"}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
         <Section>
           <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
-            Live transcription note taking app for students that has the ability to record lectures
-              and summarize them. First place overall and best accessibility hack @ HackUIowa 2022.
+            Live transcription note taking app for students with the ability to record
+              and summarize lectures. First Place Overall and Best Accessibility Hack @ HackUIowa 2022.
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
-    <SimpleGrid columns={[1, 1, 2]}>
-        <Section>
-          <WorkGridItem
-            href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
-            title="TFT Simulator"
-            thumbnail={thumbRollingOddsPerLevel}
-            >
-            Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
-          </WorkGridItem>
-        </Section>
+          <Section>
+              <WorkGridItem
+                  href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
+                  title="TFT Simulator"
+                  thumbnail={thumbRollingOddsPerLevel}
+              >
+                  Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
+              </WorkGridItem>
+          </Section>
       </SimpleGrid>
     </Container>
   )
