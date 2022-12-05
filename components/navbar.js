@@ -127,8 +127,8 @@ const Navbar = props => {
               <NextLink href="/blog" passHref>
                 <MenuItem bg="white">Blog</MenuItem>
               </NextLink>
-              <NextLink href="/contact" passHref>
-                <MenuItem bg="white">Contact</MenuItem>
+              <NextLink href="https://github.com/brandon-nguyen-lam/personal-site" passHref>
+                <MenuItem bg="white">Source</MenuItem>
               </NextLink>
               </MenuList>
             </Menu>
