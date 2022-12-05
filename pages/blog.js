@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 import thumbMemories from '../public/images/memoriesthumbnail.jpg'
+import thumbTF2 from '../public/images/TF2.jpg'
 
 const Blog = () => (
     <Layout title="Blog">
@@ -33,6 +34,13 @@ const Blog = () => (
 
                     </GridItem>
                 </Section>
+            <Section delay={0.2}>
+                <GridItem
+                    id="tf2"
+                    title={"Competitive TF2"}
+                    thumbnail={thumbTF2}>
+                </GridItem>
+            </Section>
                 {/*<Section>*/}
                 {/*    <GridItem*/}
                 {/*        id="walknote"*/}
