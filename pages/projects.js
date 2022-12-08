@@ -50,7 +50,7 @@ const Projects = () => {
                 title="Spotify Recommender"
                 thumbnail={thumbSpotifyRecommender}
             >
-                Recommends users songs based on their listening history using Spotify API.
+                Recommends users songs based on their playlists using Spotify API and collaborative filtering.
             </WorkGridItem>
         </Section>
           <Section delay={0.4}>
