@@ -84,7 +84,7 @@ const TF2 = () => (
                 <Box paddingTop="30px">
                     <AspectRatio ratio={16 / 9}>
                         <iframe
-                            src="https://youtu.be/PJAJZhQ_00I"
+                            src="https://www.youtube.com/embed/PJAJZhQ_00I"
                             allowFullScreen
                         />
                     </AspectRatio>
