@@ -2,7 +2,7 @@ import {
     Box,
     Container,
     Center,
-    Heading
+    Heading, VStack, AspectRatio
 } from "@chakra-ui/react"
 import Layout from '../../components/layouts/article'
 import Section from "../../components/section";
@@ -30,6 +30,7 @@ const TF2 = () => (
                 </Center>
             </Section>
             <Section delay={0.3}>
+                <VStack>
                 <Box>
                     TF2 is a first-person shooter game released by Valve Corporation in 2007.
                     It is a multiplayer game with nine different classes, each with their own
@@ -78,12 +79,16 @@ const TF2 = () => (
                     game have become some of my closest friends. I will always treasure the time we spent together,
                     even if it meant sacrificing sleep. Shoutout to Simon, Maddox, Landon, and Max - I love you guys.
                 </Box>
-                <Box
-                    size="sm"
-                    as='iframe'
-                    src="https://www.youtube.com/watch?v=PJAJZhQ_00I&t=52s"
-                    allowFullScreen={true}
-                />
+
+                </VStack>
+                <Box paddingTop="30px">
+                    <AspectRatio ratio={16 / 9}>
+                        <iframe
+                            src="https://youtu.be/PJAJZhQ_00I"
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </Box>
             </Section>
         </Container>
     </Layout>
