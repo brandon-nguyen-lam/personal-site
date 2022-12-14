@@ -6,7 +6,7 @@ import {
 } from "@chakra-ui/react"
 import Layout from '../../components/layouts/article'
 import Section from "../../components/section";
-import Polaroid from "../../public/images/polaroidphoto.png";
+import Polaroid from "../../public/images/polaroid.png";
 import Image from "next/image";
 
 const Memories = () => (
