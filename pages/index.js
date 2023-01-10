@@ -79,9 +79,6 @@ const Page = () => {
         </Heading>
           <UnorderedList>
             <ListItem>
-                SWE Intern @ Securian Financial - Jun 2023 to Aug 2023
-            </ListItem>
-            <ListItem>
                 SWE Intern @ UnitedHealth Group - Jan 2023 to Jun 2023
             </ListItem>
             <ListItem>
