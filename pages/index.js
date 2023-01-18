@@ -82,9 +82,6 @@ const Page = () => {
                 SWE Intern @ UnitedHealth Group - Jan 2023 to Jun 2023
             </ListItem>
             <ListItem>
-              Undergraduate Teaching Assistant @ UMN - Jan 2023 to Present
-            </ListItem>
-            <ListItem>
                 Data Analytics Intern @ Mobalytics - Sep 2022 to Nov 2022
             </ListItem>
           </UnorderedList>
