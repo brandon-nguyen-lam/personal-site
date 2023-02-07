@@ -17,6 +17,7 @@ const Main = ({ children, router }) => {
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <meta name = "description" content = "Brandon Lam's personal website" />
         <meta name = "author" content = "Brandon Lam" />
+        <meta property="og:image" content="https://i.imgur.com/wMCNiOp.png" />
         <link rel={"icon"} href={"/favicon.ico"}/>
         <link rel={"apple-touch-icon"} href={"/apple-touch-icon.png"} />
 
