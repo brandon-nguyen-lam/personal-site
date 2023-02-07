@@ -6,6 +6,8 @@ import thumbAnnote from '../public/images/Annote.png'
 import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
 import thumbSpotifyRecommender from '../public/images/spotify.jpg'
 import thumbDog from '../public/images/dog.png'
+import thumbLawSum from '../public/images/lawsum.jpg'
+import thumbAly from '../public/images/aly.png'
 
 const Projects = () => {
   return (
@@ -55,6 +57,26 @@ const Projects = () => {
         </Section>
           <Section delay={0.4}>
               <WorkGridItem
+                  href="https://github.com/brandon-nguyen-lam/LawSum"
+                  title="LawSum"
+                  thumbnail={thumbLawSum}
+              >
+                  Simplifies complex legislature, employment contracts, and leases into easy to understand summaries.
+              </WorkGridItem>
+          </Section>
+
+          <Section delay={0.6}>
+              <WorkGridItem
+                  href="https://github.com/MiniHacks/analyticsforgood"
+                  title="aly.so"
+                  thumbnail={thumbAly}
+              >
+                  Interactive dashboard containing information on farmers and their crops with predictive analytics.
+              </WorkGridItem>
+          </Section>
+
+          <Section delay={0.6}>
+              <WorkGridItem
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   title="Cute Dog"
                   thumbnail={thumbDog}
@@ -62,6 +84,7 @@ const Projects = () => {
                   Here for symmetry. Click to see a cute dog video.
               </WorkGridItem>
           </Section>
+
 
     </SimpleGrid>
     </Container>
