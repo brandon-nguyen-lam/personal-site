@@ -8,7 +8,7 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const Frog = () => {
+const FrogModel = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
@@ -122,4 +122,4 @@ const Frog = () => {
   )
 }
 
-export default Frog
+export default FrogModel

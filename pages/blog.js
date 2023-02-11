@@ -75,4 +75,3 @@ const Blog = () => (
 )
 
 export default Blog
-// export { getServerSideProps } from '../components/chakra'

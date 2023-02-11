@@ -12,7 +12,7 @@ import thumbAly from '../public/images/aly.png'
 const Projects = () => {
   return (
     <Container bg="white">
-        <Section delay={0.1}>
+        <Section>
         <Center>
             <Heading
                 as="h3"
@@ -31,13 +31,13 @@ const Projects = () => {
         <Center>Here are some of my projects.</Center>
         </Section>
       <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
-        <Section delay={0.2}>
+        <Section delay={0.05}>
           <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
             Live transcription note taking app for students with the ability to record
               and summarize lectures. First Place Overall and Best Accessibility Hack @ HackUIowa 2022.
           </WorkGridItem>
         </Section>
-          <Section delay={0.2}>
+          <Section delay={0.05}>
               <WorkGridItem
                   href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
                   title="TFT Simulator"
@@ -46,7 +46,7 @@ const Projects = () => {
                   Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
               </WorkGridItem>
           </Section>
-        <Section delay={0.4}>
+        <Section delay={0.2}>
             <WorkGridItem
                 href="https://github.com/brandon-nguyen-lam/spotify-recommender"
                 title="Spotify Recommender"
@@ -55,7 +55,7 @@ const Projects = () => {
                 Recommends users songs based on their playlists using Spotify API and collaborative filtering.
             </WorkGridItem>
         </Section>
-          <Section delay={0.4}>
+          <Section delay={0.2}>
               <WorkGridItem
                   href="https://github.com/brandon-nguyen-lam/LawSum"
                   title="LawSum"
@@ -65,7 +65,7 @@ const Projects = () => {
               </WorkGridItem>
           </Section>
 
-          <Section delay={0.6}>
+          <Section delay={0.4}>
               <WorkGridItem
                   href="https://github.com/MiniHacks/analyticsforgood"
                   title="aly.so"
@@ -75,7 +75,7 @@ const Projects = () => {
               </WorkGridItem>
           </Section>
 
-          <Section delay={0.6}>
+          <Section delay={0.4}>
               <WorkGridItem
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   title="Cute Dog"

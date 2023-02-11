@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import Navbar from '../navbar'
-import Footer from '../footer'
-import { Container, VStack } from "@chakra-ui/react";
 import dynamic from 'next/dynamic'
+import Navbar from '../navbar'
+import { Container, Box } from "@chakra-ui/react";
+import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
-const LazyFrog = dynamic(() => import('../frog'), {
+const LazyFrog = dynamic(() => import('../frog-model'), {
     ssr: false,
     loading: () => <FrogLoader/>
 })
 
 const Main = ({ children, router }) => {
   return (
-    <VStack as="main" pb={8} bg="white">
+    <Box as="main" pb={8} bg="white">
       <Head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
         <meta name = "description" content = "Brandon Lam's personal website" />
@@ -34,7 +34,7 @@ const Main = ({ children, router }) => {
         <Footer />
 
       </Container>
-    </VStack>
+    </Box>
   )
 }
 
