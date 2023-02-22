@@ -29,7 +29,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
-        <LazyFrog/>
+        <LazyFrog loading="lazy"/>
         {children}
         <Footer />
 
