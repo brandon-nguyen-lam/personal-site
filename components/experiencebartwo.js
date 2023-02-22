@@ -18,16 +18,15 @@ const ExperienceBarTwo = () => {
             <Box
                 position={"absolute"}
                 bg="#5F967C"
-                height={570}
+                height={600}  //+30
                 width={1}
                 textColor="#5F967C"
                 fontSize="1px"
                 align={"center"}
-                zIndex={-1}
             >.</Box>
             <Box
                 position={"absolute"}
-                bottom={440}
+                bottom={460} //+20
                 bg="#5F967C"
                 borderRadius={50}
                 width={6}
@@ -37,7 +36,7 @@ const ExperienceBarTwo = () => {
                 align={"center"}
             >.</Box>
         <Box
-                top="550" // -31
+                top="580" //
                 position={"relative"}
                 bg="#5F967C"
                 borderRadius={50}
