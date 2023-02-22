@@ -130,7 +130,7 @@ const Page = () => {
           </VStack>
         </HStack>
       </Section>
-      <Box marginTop={-10}>
+      <Box>
     <Section delay={0.2}>
       <Heading as="h3" variant="section-title" color={"black"}>
         Contact
@@ -195,6 +195,7 @@ const Page = () => {
       <Layout>
         <Container bg="white"
                    paddingTop="15px">
+          <Box>TESTINGTESTINGTESTING</Box>
           <Box display={{md: 'flex'}}>
             <Box flexGrow={1}>
               <Heading
