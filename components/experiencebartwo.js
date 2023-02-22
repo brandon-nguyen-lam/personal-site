@@ -4,7 +4,6 @@ import { Box, VStack } from "@chakra-ui/react";
 const ExperienceBarTwo = () => {
     return (
         <VStack>
-
             <Box
                 position={"absolute"}
                 bg="#5F967C"
@@ -18,7 +17,7 @@ const ExperienceBarTwo = () => {
             <Box
                 position={"relative"}
                 bg="#5F967C"
-                height={300} // 220
+                height={320}
                 width={1}
                 textColor="#5F967C"
                 fontSize="1px"
@@ -26,7 +25,7 @@ const ExperienceBarTwo = () => {
                 zIndex={1}
             >.</Box>
             <Box
-                 // -31
+                bottom={15} // -31
                 position={"relative"}
                 bg="#5F967C"
                 borderRadius={50}
@@ -40,7 +39,7 @@ const ExperienceBarTwo = () => {
                 position={"relative"}
                 bottom={10}
                 bg="#5F967C"
-                height={300}
+                height={340}
                 width={1}
                 textColor="#5F967C"
                 fontSize="1px"
