@@ -37,15 +37,17 @@ const Projects = () => {
               and summarize lectures. First Place Overall and Best Accessibility Hack @ HackUIowa 2022.
           </WorkGridItem>
         </Section>
-          <Section delay={0.05}>
-              <WorkGridItem
-                  href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
-                  title="TFT Simulator"
-                  thumbnail={thumbRollingOddsPerLevel}
-              >
-                  Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
-              </WorkGridItem>
-          </Section>
+
+            <Section delay={0.05}>
+                <WorkGridItem
+                    href="https://github.com/MiniHacks/aly"
+                    title="aly"
+                    thumbnail={thumbAly}
+                >
+                    Website, chrome extension, and iOS app keeping you accountable one awkward at text a time. First Place in Education and Top 3 Overall @ HackNYU 2023.
+                </WorkGridItem>
+        </Section>
+
         <Section delay={0.2}>
             <WorkGridItem
                 href="https://github.com/brandon-nguyen-lam/spotify-recommender"
@@ -65,16 +67,16 @@ const Projects = () => {
               </WorkGridItem>
           </Section>
 
+
           <Section delay={0.4}>
               <WorkGridItem
-                  href="https://github.com/MiniHacks/analyticsforgood"
-                  title="aly.so"
-                  thumbnail={thumbAly}
+                  href="https://github.com/brandon-nguyen-lam/TFT-Rolling-Sim"
+                  title="TFT Simulator"
+                  thumbnail={thumbRollingOddsPerLevel}
               >
-                  Interactive dashboard containing information on farmers and their crops with predictive analytics.
+                  Replicates Riot Game's Teamfight Tactics and calculates the odds of getting a desired unit using hypergeometric distribution.
               </WorkGridItem>
           </Section>
-
           <Section delay={0.4}>
               <WorkGridItem
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
