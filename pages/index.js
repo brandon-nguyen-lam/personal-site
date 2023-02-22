@@ -15,11 +15,10 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
-import { IoLogoGithub, IoMail, IoLogoLinkedin } from 'react-icons/io5'
+import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText} from 'react-icons/io5'
 import ExperienceBar from "../components/experiencebar";
 import ExperienceBarTwo from "../components/experiencebartwo";
 import { isMobile } from "react-device-detect";
-
 
 const Page = () => {
   if (!isMobile) {
@@ -181,6 +180,20 @@ const Page = () => {
                 >
                     brandonnguyenlam@gmail.com
                 </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href={"https://drive.google.com/file/d/1bnhhskfCkXfNhWWyprMu3dLCSGA-2nio/view"}
+                textUnderlineOffset={1000}
+                color={"green"}
+          >
+            <Button
+                variant="ghost"
+                colorScheme="Green"
+                leftIcon={<Icon as={IoDocumentText} />}
+            >
+              Resume
+            </Button>
           </Link>
         </ListItem>
         </List>
@@ -348,6 +361,20 @@ const Page = () => {
                         leftIcon={<Icon as={IoMail} />}
                     >
                       brandonnguyenlam@gmail.com
+                    </Button>
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link href={"https://drive.google.com/file/d/1bnhhskfCkXfNhWWyprMu3dLCSGA-2nio/view"}
+                        textUnderlineOffset={1000}
+                        color={"green"}
+                        >
+                    <Button
+                        variant="ghost"
+                        colorScheme="Green"
+                        leftIcon={<Icon as={IoDocumentText} />}
+                    >
+                        Resume
                     </Button>
                   </Link>
                 </ListItem>
