@@ -25,7 +25,7 @@ const ExperienceBarTwo = () => {
                 zIndex={1}
             >.</Box>
             <Box
-                bottom={0}
+                bottom={-31}
                 position={"relative"}
                 bg="#5F967C"
                 borderRadius={50}
@@ -39,7 +39,7 @@ const ExperienceBarTwo = () => {
                 position={"relative"}
                 bottom={10}
                 bg="#5F967C"
-                height={250}
+                height={350}
                 width={1}
                 textColor="#5F967C"
                 fontSize="1px"
