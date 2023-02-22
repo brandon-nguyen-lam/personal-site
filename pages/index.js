@@ -195,7 +195,6 @@ const Page = () => {
       <Layout>
         <Container bg="white"
                    paddingTop="15px">
-          <Box>TESTINGTESTINGTESTING</Box>
           <Box display={{md: 'flex'}}>
             <Box flexGrow={1}>
               <Heading
