@@ -128,7 +128,6 @@ const Page = () => {
           </VStack>
         </HStack>
       </Section>
-      <Box marginTop={-16}>
     <Section delay={0.2}>
       <Heading as="h3" variant="section-title" color={"black"}>
         Contact
@@ -184,7 +183,6 @@ const Page = () => {
         </List>
 
     </Section>
-        </Box>
     </Container>
       </Layout>
   )
