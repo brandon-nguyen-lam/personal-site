@@ -6,8 +6,8 @@ import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
 const LazyFrog = dynamic(() => import('../frog-model'), {
-    ssr: false,
-    loading: () => <FrogLoader/>
+    ssr: true,
+    loading: () => <FrogLoader />
 })
 
 const Main = ({ children, router }) => {

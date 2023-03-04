@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import { Box, Heading, Text, Container, Divider, Button } from '@chakra-ui/react'
-import ExperienceBar from '../components/experiencebar'
 
 const NotFound = () => {
     return (
@@ -15,7 +14,6 @@ const NotFound = () => {
                     <Button colorScheme="green">Go Home</Button>
                 </NextLink>
             </Box>
-            <ExperienceBar/>
 
         </Container>
     )
