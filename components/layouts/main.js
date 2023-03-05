@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { Suspense } from 'react'
 import dynamic from 'next/dynamic'
 import Navbar from '../navbar'
-import { Container, Box } from "@chakra-ui/react";
+import { Container, Box, Spinner } from "@chakra-ui/react";
 import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
@@ -30,7 +30,11 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
-        <LazyFrog/>
+        <Box>
+            <Suspense fallback={<Box><Spinner/></Box>}>
+                <LazyFrog/>
+            </Suspense>
+        </Box>
         {children}
         <Footer />
 
