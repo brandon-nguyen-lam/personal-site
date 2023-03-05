@@ -15,7 +15,7 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
-import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText} from 'react-icons/io5'
+import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText, IoCall} from 'react-icons/io5'
 import ExperienceBar from "../components/experiencebar";
 import ExperienceBarTwo from "../components/experiencebartwo";
 import { isMobile } from "react-device-detect";
@@ -182,7 +182,23 @@ const Page = () => {
                 </Button>
           </Link>
         </ListItem>
+
         <ListItem>
+          <ListItem>
+            <Box href={"tel:+16128608208"}
+                  textUnderlineOffset={1000}
+                  color={"green"}
+            >
+              <Button
+                  variant="ghost"
+                  colorScheme="Green"
+                  leftIcon={<Icon as={IoCall} />}
+              >
+                  (612)-860-8208
+              </Button>
+            </Box>
+          </ListItem>
+
           <Link href={"https://drive.google.com/file/d/13IE-HjDouxU8jghj4iNraiYx4wSOYvde/view"}
                 textUnderlineOffset={1000}
                 color={"green"}
