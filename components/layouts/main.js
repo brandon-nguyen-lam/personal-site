@@ -1,12 +1,13 @@
 import Head from 'next/head'
+import React from 'react'
 import dynamic from 'next/dynamic'
 import Navbar from '../navbar'
 import { Container, Box } from "@chakra-ui/react";
 import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
-const LazyFrog = dynamic(() => import('../frog-model'), {
-    ssr: false,
+const LazyFrog = React.lazy(() => import('../frog-model'), {
+    // ssr: false,
     // loading: () => <FrogLoader />
 })
 
@@ -29,7 +30,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
-        <LazyFrog loading="lazy"/>
+        <LazyFrog/>
         {children}
         <Footer />
 
