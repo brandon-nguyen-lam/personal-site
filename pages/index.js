@@ -16,9 +16,6 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
 import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText, IoCall} from 'react-icons/io5'
-import ExperienceBar from "../components/experiencebar";
-import ExperienceBarTwo from "../components/experiencebartwo";
-import { isMobile } from "react-device-detect";
 
 const Page = () => {
   return (

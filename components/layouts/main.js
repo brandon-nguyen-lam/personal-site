@@ -6,10 +6,17 @@ import { Container, Box, Spinner } from "@chakra-ui/react";
 import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
-const LazyFrog = React.lazy(() => import('../frog-model'), {
-    // ssr: false,
-    // loading: () => <FrogLoader />
-})
+// const LazyFrog = React.lazy(() => import('../frog-model'), {
+//     ssr: false,
+//     loading: () => <FrogLoader />
+// })
+
+const LazyFrog = dynamic(() => import('../frog-model'),
+    {
+        ssr: false,
+        loading: () => <FrogLoader/>
+    }
+)
 
 const Main = ({ children, router }) => {
   return (
