@@ -38,9 +38,10 @@ function Links () {
                           color="black"
                           style={{ textDecoration: "none" }}
                     >
-                        <Button variant='ghost'>
+                        <Button variant='ghost' color={"black"} onHover={{textDecoration: "none"}}>
                             <ListItem>
                                 <ListIcon as={IoPerson} color='green.500' />
+
                                 Website
                             </ListItem>
                         </Button>
@@ -50,9 +51,9 @@ function Links () {
                 <Section delay={0.2}>
                     <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
                         <Link href={"https://github.com/brandon-nguyen-lam"} style={{ textDecoration: "none"}}>
-                            <Button variant={'ghost'} onHover={{textDecoration: "none"}}>
+                            <Button variant={'ghost'} onHover={{textDecoration: "none"}} color={"black"}>
                                 <ListItem>
-                                    <ListIcon as={IoLogoGithub} color='black' />
+                                    <ListIcon as={IoLogoGithub}/>
                                     GitHub
                                 </ListItem>
                             </Button>
@@ -62,7 +63,7 @@ function Links () {
                 <Section delay={0.3}>
                 <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
                     <Link href={"https://www.linkedin.com/in/brandon-nguyen-lam/"} style={{ textDecoration: "none"}}>
-                        <Button variant={'ghost'} onHover={{textDecoration: "none"}}>
+                        <Button variant={'ghost'} onHover={{textDecoration: "none"}} color={"black"}>
                             <ListItem>
                                 <ListIcon as={IoLogoLinkedin} color='blue.500' />
                                 LinkedIn
