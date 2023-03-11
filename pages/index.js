@@ -8,9 +8,6 @@ import {
   Button,
   Icon,
   Link,
-  HStack,
-  VStack,
-  Text,
 } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -79,54 +76,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title" color={"black"}>
           Work Experience
         </Heading>
-
         <ExperienceBar/>
-        {/*<HStack alignItems={"flex-start"}>*/}
-        {/*  <VStack justifyContent={"flex-start"}*/}
-        {/*  alignItems={"flex-start"}*/}
-        {/*  >*/}
-        {/*  <Box>*/}
-        {/*    <Text fontWeight="bold">*/}
-        {/*    UnitedHealth Group - Software Engineer Intern*/}
-        {/*    </Text>*/}
-        {/*    </Box>*/}
-        {/*  <Box*/}
-        {/*  >*/}
-        {/*    <Text as="b" fontSize={14}>*/}
-        {/*    Jan 2023 to Jun 2023*/}
-        {/*    </Text>*/}
-        {/*    </Box>*/}
-        {/*  <Box>*/}
-        {/*    At UnitedHealth Group, I participated in*/}
-        {/*    creating and fine-tuning a chatbot utilizing AI to help customers with information*/}
-        {/*    related to their bank account that was used by over 1,000 users*/}
-        {/*    daily and deployed on Microsoft Azure and*/}
-        {/*    redesigned the interface for the company's website and mobile app*/}
-        {/*    improving the accessibility and user experience scores by 30% using*/}
-        {/*    React.*/}
-
-        {/*  </Box>*/}
-        {/*    <Box>*/}
-        {/*      <Text fontWeight="bold">*/}
-        {/*        Mobalytics - Data Analytics Intern*/}
-        {/*      </Text>*/}
-        {/*    </Box>*/}
-        {/*    <Box*/}
-        {/*    >*/}
-        {/*      <Text as="b" fontSize={14}>*/}
-        {/*        Sep 2022 to Dec 2022*/}
-        {/*      </Text>*/}
-        {/*    </Box>*/}
-        {/*    <Box>*/}
-        {/*        At Mobalytics, I conducted market analysis on 12 different crypto*/}
-        {/*        games analyzing their size, potential, environment, and competition.*/}
-        {/*        I also stored and visualized data on over 1,000 companies in the eSports*/}
-        {/*        industry, using SQL and Tableu. From that, I was able to conclude that*/}
-        {/*      over 95% of eSports companies were not profitable and presented my findings on*/}
-        {/*        the future of eSports companies to the company CEO and CTO.*/}
-        {/*    </Box>*/}
-        {/*  </VStack>*/}
-        {/*</HStack>*/}
       </Section>
       <Box>
     <Section delay={0.2}>
