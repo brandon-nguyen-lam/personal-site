@@ -10,7 +10,7 @@ const Footer = () => {
             Website inspired by Takuya Matsuyama
           </Box>
         </Link>
-      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> last updated 3/10/2023</Box>
+      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> last updated 3/11/2023</Box>
       </VStack>
     </Container>
       <Box

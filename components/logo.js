@@ -9,6 +9,7 @@ const Logo = () => {
                     <Text
                           fontFamily={'M PLUS Rounded 1c'}
                           fontSize={"xl"}
+                          color={"black"}
                     >
                         Brandon Lam
                     </Text>

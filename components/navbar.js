@@ -72,7 +72,7 @@ const Navbar = props => {
           </Link>
         </Stack>
 
-        <Box flex={1} align={"left"} >
+        <Box flex={1} align={"right"} >
           <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
             <Menu>
               <MenuButton
@@ -81,6 +81,7 @@ const Navbar = props => {
                 variant="solid"
                 aria-label={"Options"}
                 bg="white"
+
               />
               <MenuList>
               <NextLink href="/" passHref>
