@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from './logo.js'
+import {Slant as Hamburger} from 'hamburger-react'
 
 const Navbar = props => {
 
@@ -77,24 +78,30 @@ const Navbar = props => {
             <Menu>
               <MenuButton
                 as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="solid"
+                icon={<Hamburger size={20} />}
                 aria-label={"Options"}
                 bg="white"
-
               />
               <MenuList>
               <NextLink href="/" passHref>
-                <MenuItem bg="white">Home</MenuItem>
+                <MenuItem bg="white" _hover={{bg: "#E4E8EF" }}>
+                  Home
+                </MenuItem>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <MenuItem bg="white">Projects</MenuItem>
+                <MenuItem bg="white" _hover={{bg: "#E4E8EF" }} >
+                  Projects
+                </MenuItem>
               </NextLink>
               <NextLink href="/blog" passHref>
-                <MenuItem bg="white">Blog</MenuItem>
+                <MenuItem bg="white" _hover={{bg: "#E4E8EF" }}>
+                  Blog
+                </MenuItem>
               </NextLink>
               <NextLink href="https://github.com/brandon-nguyen-lam/personal-site" passHref>
-                <MenuItem bg="white">Source</MenuItem>
+                <MenuItem bg="white" _hover={{bg: "#E4E8EF" }}>
+                  Source
+                </MenuItem>
               </NextLink>
               </MenuList>
             </Menu>
