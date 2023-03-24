@@ -11,6 +11,32 @@ const ExperienceBar = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#5F967C', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
+                    date="June 2023 - August 2023"
+                    iconStyle={{
+                        background: '#fff',
+                        color: '#fff',
+                        width: '48px',
+                        height: '48px',
+                    }}
+                    icon={<Box>
+                        <Image borderRadius="50%" src={"images/nasalogo.jpg"}/>
+                    </Box>
+                    }
+                >
+                    <Heading as="h3" size="md" mb={2}>
+                        Incoming Software Engineer Intern
+                    </Heading>
+                    <Heading as={"h4"} size={"sm"} mb={2}>
+                        NASA
+                    </Heading>
+                    <Text>
+                        I'll be working in Columbus, Ohio at the Glenn Research Center.
+                    </Text>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#5F967C', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
                     date="January 2023 - June 2023"
                     iconStyle={{
                         background: '#5F967C',
