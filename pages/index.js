@@ -85,81 +85,55 @@ const Page = () => {
       </Heading>
       <List>
         <ListItem>
-          <Link
-              href="https://github.com/brandon-nguyen-lam"
-              textUnderlineOffset={1000}
-              target={"_blank"}
-              color="green"
-          >
             <Button
                 variant="ghost"
-                colorScheme="Green"
+                colorScheme="green"
                 leftIcon={<Icon as={IoLogoGithub} />}
+                onClick={() => window.open("https://github.com/brandon-nguyen-lam")}
             >
               brandon-nguyen-lam
             </Button>
-            </Link>
         </ListItem>
         <ListItem>
-          <Link
-              href="https://www.linkedin.com/in/brandon-nguyen-lam/"
-              textUnderlineOffset={1000}
-              target="_blank"
-              color="green"
-          >
-
                 <Button
                     variant="ghost"
-                    colorScheme="Green"
+                    colorScheme="green"
                     leftIcon={<Icon as={IoLogoLinkedin} />}
+                    onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
                     brandon-nguyen-lam
                 </Button>
-          </Link>
         </ListItem>
         <ListItem>
-          <Link href={"mailto:brandonnguyenlam@gmail.com"}
-                textUnderlineOffset={1000}
-                color={"green"}
-          >
                 <Button
                     variant="ghost"
-                    colorScheme="Green"
+                    colorScheme="green"
                     leftIcon={<Icon as={IoMail} />}
+                    onClick={() => window.open("mailto:brandonnguyenlam@gmail.com")}
                 >
                     brandonnguyenlam@gmail.com
                 </Button>
-          </Link>
         </ListItem>
 
         <ListItem>
           <ListItem>
-            <Box href={"tel:+16128608208"}
-                  textUnderlineOffset={1000}
-                  color={"green"}
-            >
               <Button
                   variant="ghost"
-                  colorScheme="Green"
+                  colorScheme="green"
                   leftIcon={<Icon as={IoCall} />}
+                  onClick={() => window.open("tel:+16128608208")}
               >
                   (612)-860-8208
               </Button>
-            </Box>
           </ListItem>
-
-          <Link href={"https://drive.google.com/file/d/13IE-HjDouxU8jghj4iNraiYx4wSOYvde/view"}
-                textUnderlineOffset={1000}
-                color={"green"}
-          >
             <Button
                 variant="ghost"
-                colorScheme="Green"
+                colorScheme="green"
                 leftIcon={<Icon as={IoDocumentText} />}
+                onClick={() => window.open("https://drive.google.com/file/d/13IE-HjDouxU8jghj4iNraiYx4wSOYvde/view")}
             >
               Resume
             </Button>
-          </Link>
         </ListItem>
         </List>
 
