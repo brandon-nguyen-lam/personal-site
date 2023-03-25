@@ -19,7 +19,7 @@ const ExperienceBar = () => {
                         height: '48px',
                     }}
                     icon={<Box>
-                        <Image borderRadius="50%" src={"images/nasalogo.jpg"}/>
+                        <Image borderRadius="50%" src={"images/nasa.png"}/>
                     </Box>
                     }
                 >
