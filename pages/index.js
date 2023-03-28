@@ -130,7 +130,7 @@ const Page = () => {
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<Icon as={IoDocumentText} />}
-                onClick={() => window.open("https://drive.google.com/file/d/13IE-HjDouxU8jghj4iNraiYx4wSOYvde/view")}
+                onClick={() => window.open("https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view")}
             >
               Resume
             </Button>

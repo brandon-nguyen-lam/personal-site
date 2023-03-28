@@ -10,11 +10,11 @@ const Footer = () => {
             Website inspired by Takuya Matsuyama
           </Box>
         </Link>
-      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> last updated 3/24/2023</Box>
+      <Box align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> last updated 3/28/2023</Box>
       </VStack>
     </Container>
       <Box
-        position="absolute"
+        position="fixed"
         bg="#5F967C"
         bottom="0"
         left="0"
@@ -22,6 +22,7 @@ const Footer = () => {
         textColor="#5F967C"
         height="15px"
         fontSize="1px"
+
       >easter egg!!</Box>
 
     </VStack>

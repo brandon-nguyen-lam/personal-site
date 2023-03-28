@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Button, UnorderedList, ListItem, Text, ListIcon, List, Center, Link, Heading, VStack} from "@chakra-ui/react";
-import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText, IoCall, IoLogoYoutube, IoPerson, IoDesktopOutline} from 'react-icons/io5'
+import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText, IoCall, IoLogoYoutube, IoPerson, IoDesktopOutline, IoMusicalNotes} from 'react-icons/io5'
 import NextLink from "next/link";
 import Section from "../components/section";
 
@@ -61,28 +61,41 @@ function Links () {
                     </Box>
                 </Section>
                 <Section delay={0.3}>
-                <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
-                    <Link href={"https://www.linkedin.com/in/brandon-nguyen-lam/"} style={{ textDecoration: "none"}}>
-                        <Button variant={'ghost'} onHover={{textDecoration: "none"}} color={"black"}>
-                            <ListItem>
-                                <ListIcon as={IoLogoLinkedin} color='blue.500' />
-                                LinkedIn
-                            </ListItem>
-                        </Button>
-                    </Link>
-                </Box>
-                </Section>
-                <Section delay={0.4}>
-                <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
-                    <Link href={"https://www.youtube.com/@brandonnguyenlam/featured"} style={{ textDecoration: "none"}}>
-                        <Button variant={'ghost'} onHover={{textDecoration: "none"}}>
-                            <ListItem>
-                                <ListIcon as={IoLogoYoutube} color='red' />
+                    <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
+                        <Link href={"https://www.youtube.com/@brandonnguyenlam/featured"} style={{ textDecoration: "none"}}>
+                            <Button variant={'ghost'} onHover={{textDecoration: "none"}}>
+                                <ListItem>
+                                    <ListIcon as={IoLogoYoutube} color='red' />
                                     YouTube
-                            </ListItem>
-                        </Button>
-                    </Link>
-                </Box>
+                                </ListItem>
+                            </Button>
+                        </Link>
+                    </Box>
+                </Section>
+                {/*<Section delay={0.4}>*/}
+                {/*<Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>*/}
+                {/*    <Link href={"https://www.linkedin.com/in/brandon-nguyen-lam/"} style={{ textDecoration: "none"}}>*/}
+                {/*        <Button variant={'ghost'} onHover={{textDecoration: "none"}} color={"black"}>*/}
+                {/*            <ListItem>*/}
+                {/*                <ListIcon as={IoLogoLinkedin} color='blue.500' />*/}
+                {/*                LinkedIn*/}
+                {/*            </ListItem>*/}
+                {/*        </Button>*/}
+                {/*    </Link>*/}
+                {/*</Box>*/}
+                {/*</Section>*/}
+
+                <Section delay={0.4}>
+                    <Box style={{border: "3px solid #5F967C", padding: "10px", borderRadius: "12px"}}>
+                        <Link href={"https://www.youtube.com/watch?v=0yBnIUX0QAE"} style={{ textDecoration: "none"}}>
+                            <Button variant={'ghost'} onHover={{textDecoration: "none"}}>
+                                <ListItem>
+                                    <ListIcon as={IoMusicalNotes} color='black' />
+                                    Fav Song
+                                </ListItem>
+                            </Button>
+                        </Link>
+                    </Box>
                 </Section>
             </List>
             </VStack>
