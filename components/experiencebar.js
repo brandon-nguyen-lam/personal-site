@@ -24,10 +24,10 @@ const ExperienceBar = () => {
                     }
                 >
                     <Heading as="h3" size="md" mb={2}>
-                        Incoming Software Engineer Intern
+                        NASA
                     </Heading>
                     <Heading as={"h4"} size={"sm"} mb={2}>
-                        NASA
+                        Incoming Software Engineer Intern
                     </Heading>
                     <Text>
                         I'll be working in Columbus, Ohio at the Glenn Research Center.
@@ -50,10 +50,10 @@ const ExperienceBar = () => {
                     }
                 >
                     <Heading as="h3" size="md" mb={2}>
-                        Software Engineer Intern
+                        UnitedHealth Group
                     </Heading>
                     <Heading as={"h4"} size={"sm"} mb={2}>
-                        UnitedHealth Group
+                        Software Engineer Intern
                     </Heading>
                     <Text>
                         I helped in
@@ -81,10 +81,10 @@ const ExperienceBar = () => {
                     }
                     >
                     <Heading as="h3" size="md" mb={2}>
-                        Data Analytics Intern
+                        Mobalytics
                     </Heading>
                     <Heading as={"h4"} size={"sm"} mb={2}>
-                        Mobalytics
+                        Data Analytics Intern
                     </Heading>
                     <Text>
                         I conducted market analysis on 12 different crypto
