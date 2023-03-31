@@ -28,8 +28,6 @@ const Main = ({ children, router }) => {
         <meta property="og:image" content="/images/display.png" />
         <link rel={"icon"} href={"/favicon.ico"}/>
         <link rel={"apple-touch-icon"} href={"/apple-touch-icon.png"} />
-
-
         <title>Brandon's Site</title>
 
       </Head>
@@ -38,9 +36,9 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
         <Box>
-            <Suspense fallback={<Box><Spinner/></Box>}>
+            {/*<Suspense fallback={<Box><Spinner/></Box>}>*/}
                 <LazyFrog/>
-            </Suspense>
+            {/*</Suspense>*/}
         </Box>
         {children}
         <Footer />

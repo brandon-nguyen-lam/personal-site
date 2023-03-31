@@ -6,8 +6,6 @@ import {
   ListItem,
   List,
   Button,
-  Icon,
-  Link,
 } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -88,7 +86,7 @@ const Page = () => {
             <Button
                 variant="ghost"
                 colorScheme="green"
-                leftIcon={<Icon as={IoLogoGithub} />}
+                leftIcon={<IoLogoGithub/>}
                 onClick={() => window.open("https://github.com/brandon-nguyen-lam")}
             >
               brandon-nguyen-lam
@@ -98,7 +96,7 @@ const Page = () => {
                 <Button
                     variant="ghost"
                     colorScheme="green"
-                    leftIcon={<Icon as={IoLogoLinkedin} />}
+                    leftIcon={<IoLogoLinkedin/>}
                     onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
                     brandon-nguyen-lam
@@ -108,7 +106,7 @@ const Page = () => {
                 <Button
                     variant="ghost"
                     colorScheme="green"
-                    leftIcon={<Icon as={IoMail} />}
+                    leftIcon={<IoMail/>}
                     onClick={() => window.open("mailto:brandonnguyenlam@gmail.com")}
                 >
                     brandonnguyenlam@gmail.com
@@ -120,7 +118,7 @@ const Page = () => {
               <Button
                   variant="ghost"
                   colorScheme="green"
-                  leftIcon={<Icon as={IoCall} />}
+                  leftIcon={<IoCall/>}
                   onClick={() => window.open("tel:+16128608208")}
               >
                   (612)-860-8208
@@ -129,7 +127,7 @@ const Page = () => {
             <Button
                 variant="ghost"
                 colorScheme="green"
-                leftIcon={<Icon as={IoDocumentText} />}
+                leftIcon={<IoDocumentText />}
                 onClick={() => window.open("https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view")}
             >
               Resume
