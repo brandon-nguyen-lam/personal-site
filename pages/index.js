@@ -6,6 +6,7 @@ import {
   ListItem,
   List,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -83,55 +84,59 @@ const Page = () => {
       </Heading>
       <List>
         <ListItem>
+          <Link href="https://github.com/brandon-nguyen-lam" target="_blank" _hover={{textDecoration: "none"}}>
             <Button
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<IoLogoGithub/>}
-                onClick={() => window.open("https://github.com/brandon-nguyen-lam")}
             >
               brandon-nguyen-lam
             </Button>
+            </Link>
         </ListItem>
         <ListItem>
+          <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" target="_blank" _hover={{textDecoration: "none"}}>
                 <Button
                     variant="ghost"
                     colorScheme="green"
                     leftIcon={<IoLogoLinkedin/>}
-                    onClick={() => window.open("https://www.linkedin.com/in/brandon-nguyen-lam/")}
                 >
                     brandon-nguyen-lam
                 </Button>
+          </Link>
         </ListItem>
         <ListItem>
+          <Link href="mailto:brandonnguyenlam@gmail.com" target="_blank" _hover={{textDecoration: "none"}}>
                 <Button
                     variant="ghost"
                     colorScheme="green"
                     leftIcon={<IoMail/>}
-                    onClick={() => window.open("mailto:brandonnguyenlam@gmail.com")}
                 >
                     brandonnguyenlam@gmail.com
                 </Button>
+          </Link>
         </ListItem>
-
-        <ListItem>
           <ListItem>
+            <Link href="tel:+16128608208" target="_blank" _hover={{textDecoration: "none"}}>
               <Button
                   variant="ghost"
                   colorScheme="green"
                   leftIcon={<IoCall/>}
-                  onClick={() => window.open("tel:+16128608208")}
               >
                   (612)-860-8208
               </Button>
+            </Link>
           </ListItem>
+        <ListItem>
+          <Link href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view" target="_blank" _hover={{textDecoration: "none"}}>
             <Button
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<IoDocumentText />}
-                onClick={() => window.open("https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view")}
             >
               Resume
             </Button>
+          </Link>
         </ListItem>
         </List>
 
