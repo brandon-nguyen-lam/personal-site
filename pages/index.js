@@ -32,7 +32,7 @@ const Page = () => {
     <Layout>
     <Container bg="white"
     paddingTop="15px">
-      <Box fontSize={36} justifyContent={'center'} align='center' fontFamily="Arial">
+      <Box fontSize={{base:"30px", md:"36px"}} justifyContent={'center'} align='center' fontFamily="Arial">
       <TypeWriter
         options={{
             strings: ['👋 Hi, I\'m Brandon Lam', '🧑‍💻 I\'m a Software Engineer', '🐸 I like frogs'],

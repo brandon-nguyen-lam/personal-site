@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>
       </HStack>
         <Link href={"https://github.com/brandon-nguyen-lam/personal-site"} isExternal>
-      <Box pt={2} align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> site last updated 4/18/2023</Box>
+      <Box pt={2} align= "center" opacity={0.3} fontSize={"sm"} color={"black"}> site last updated 4/19/2023</Box>
         </Link>
     </Container>
       <Box
