@@ -36,9 +36,9 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
         <Box>
-            {/*<Suspense fallback={<Box><Spinner/></Box>}>*/}
+            <Suspense fallback={<Box><Spinner/></Box>}>
                 <LazyFrog/>
-            {/*</Suspense>*/}
+            </Suspense>
         </Box>
         {children}
         <Footer />
