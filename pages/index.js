@@ -7,19 +7,45 @@ import {
   List,
   Button,
   Link,
+  HStack,
 } from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
-import {IoLogoGithub, IoMail, IoLogoLinkedin, IoDocumentText, IoCall} from 'react-icons/io5'
 import ExperienceBar from '../components/experiencebar'
+import TypeWriter from 'typewriter-effect'
+import GraphemeSplitter from "grapheme-splitter";
 
 const Page = () => {
+    const stringSplitter = string => {
+        const splitter = new GraphemeSplitter();
+        return splitter.splitGraphemes(string);
+    }
+
+    const typewriter = new TypeWriter('#typewriter', {
+    autoStart: true,
+    loop: true,
+    stringSplitter
+    })
+
   return (
     <Layout>
     <Container bg="white"
     paddingTop="15px">
-      <Box display={{md: 'flex'}}>
+      <Box fontSize={36} justifyContent={'center'} align='center' fontFamily="Arial">
+      <TypeWriter
+        options={{
+            strings: ['👋 Hi, I\'m Brandon Lam', '🧑‍💻 I\'m a Software Engineer', '🐸 I like frogs'],
+            autoStart: true,
+            loop: true,
+          delay: '100',
+            deleteSpeed: 'natural',
+
+          stringSplitter
+        }}
+        />
+      </Box>
+      <Box pt={5} display={{md: 'flex'}}>
         <Box flexGrow={1}>
           <Heading
               as="h2"
@@ -77,71 +103,6 @@ const Page = () => {
         </Heading>
         <ExperienceBar/>
       </Section>
-      <Box>
-    <Section delay={0.2}>
-      <Heading as="h3" variant="section-title" color={"black"}>
-        Contact
-      </Heading>
-      <List>
-        <ListItem>
-          <Link href="https://github.com/brandon-nguyen-lam" target="_blank" _hover={{textDecoration: "none"}}>
-            <Button
-                variant="ghost"
-                colorScheme="green"
-                leftIcon={<IoLogoGithub/>}
-            >
-              brandon-nguyen-lam
-            </Button>
-            </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://www.linkedin.com/in/brandon-nguyen-lam/" target="_blank" _hover={{textDecoration: "none"}}>
-                <Button
-                    variant="ghost"
-                    colorScheme="green"
-                    leftIcon={<IoLogoLinkedin/>}
-                >
-                    brandon-nguyen-lam
-                </Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="mailto:brandonnguyenlam@gmail.com" target="_blank" _hover={{textDecoration: "none"}}>
-                <Button
-                    variant="ghost"
-                    colorScheme="green"
-                    leftIcon={<IoMail/>}
-                >
-                    brandonnguyenlam@gmail.com
-                </Button>
-          </Link>
-        </ListItem>
-          <ListItem>
-            <Link href="tel:+16128608208" target="_blank" _hover={{textDecoration: "none"}}>
-              <Button
-                  variant="ghost"
-                  colorScheme="green"
-                  leftIcon={<IoCall/>}
-              >
-                  (612)-860-8208
-              </Button>
-            </Link>
-          </ListItem>
-        <ListItem>
-          <Link href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view" target="_blank" _hover={{textDecoration: "none"}}>
-            <Button
-                variant="ghost"
-                colorScheme="green"
-                leftIcon={<IoDocumentText />}
-            >
-              Resume
-            </Button>
-          </Link>
-        </ListItem>
-        </List>
-
-    </Section>
-        </Box>
     </Container>
       </Layout>
   )

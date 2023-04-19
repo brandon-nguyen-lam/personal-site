@@ -65,11 +65,13 @@ const Navbar = props => {
             Blog
           </Link>
           <Link as={NextLink}
-                href="https://github.com/brandon-nguyen-lam/personal-site"
+                href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view"
                 color="black"
                 style={{ textDecorationColor: "#5F967C" }}
-                passHref>
-            Source
+                passHref
+                isExternal
+          >
+            Resume
           </Link>
         </Stack>
 
@@ -98,9 +100,9 @@ const Navbar = props => {
                   Blog
                 </MenuItem>
               </NextLink>
-              <NextLink href="https://github.com/brandon-nguyen-lam/personal-site" passHref>
+              <NextLink href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view" passHref>
                 <MenuItem bg="white" _hover={{bg: "#E4E8EF" }}>
-                  Source
+                  Resume
                 </MenuItem>
               </NextLink>
               </MenuList>

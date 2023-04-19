@@ -6,11 +6,6 @@ import { Container, Box, Spinner } from "@chakra-ui/react";
 import Footer from '../footer'
 import FrogLoader from "../frog-loader";
 
-// const LazyFrog = React.lazy(() => import('../frog-model'), {
-//     ssr: false,
-//     loading: () => <FrogLoader />
-// })
-
 const LazyFrog = dynamic(() => import('../frog-model'),
     {
         ssr: false,
@@ -34,16 +29,11 @@ const Main = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14} bg="" justifyContent="space-between">
-        <Box>
-            <Suspense fallback={<Box><Spinner/></Box>}>
-                <LazyFrog/>
-            </Suspense>
-        </Box>
+      <Box pt={14} bg="" justifyContent="space-between">
         {children}
         <Footer />
 
-      </Container>
+      </Box>
     </Box>
   )
 }
