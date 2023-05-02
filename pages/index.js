@@ -13,35 +13,36 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from "../components/layouts/article";
 import ExperienceBar from '../components/experiencebar'
-import TypeWriter from 'typewriter-effect'
 import GraphemeSplitter from "grapheme-splitter";
+import React, { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const DynamicTypeWriter = dynamic(() => import('typewriter-effect'), {
+    ssr: false
+});
+
+
 
 const Page = () => {
+
     const stringSplitter = string => {
         const splitter = new GraphemeSplitter();
         return splitter.splitGraphemes(string);
     }
 
-    const typewriter = new TypeWriter('#typewriter', {
-    autoStart: true,
-    loop: true,
-    stringSplitter
-    })
-
-  return (
+    return (
     <Layout>
     <Container bg="white"
     paddingTop="15px">
       <Box fontSize={{base:"28px", md:"35px"}} justifyContent={'center'} align='center' fontFamily="Arial">
-      <TypeWriter
+      <DynamicTypeWriter
         options={{
             strings: ['👋 Hi, I\'m Brandon Lam', ' 💻 I\'m a Software Engineer', '🐸 I like frogs'],
             autoStart: true,
             loop: true,
-          delay: '100',
+            delay: '100',
             deleteSpeed: 'natural',
-
-          stringSplitter
+            stringSplitter
         }}
         />
       </Box>

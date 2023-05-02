@@ -36,7 +36,7 @@ const Footer = () => {
                 </HStack>
                 <Link href={"https://github.com/brandon-nguyen-lam/personal-site"} isExternal>
                     <Box pt={2} align="center" opacity={0.3} fontSize={"sm"} color={"black"}>
-                        site last updated 5/2/2023
+                        site last updated 5/3/2023
                     </Box>
                 </Link>
             </Container>
