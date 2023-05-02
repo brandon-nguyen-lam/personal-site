@@ -16,6 +16,7 @@ import ExperienceBar from '../components/experiencebar'
 import GraphemeSplitter from "grapheme-splitter";
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
+import Model from '../components/test'
 
 const DynamicTypeWriter = dynamic(() => import('typewriter-effect'), {
     ssr: false
@@ -45,6 +46,9 @@ const Page = () => {
             stringSplitter
         }}
         />
+          <Box height="100%">
+            <Model/>
+          </Box>
       </Box>
       <Box pt={5} display={{md: 'flex'}}>
         <Box flexGrow={1}>
