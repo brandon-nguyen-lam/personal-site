@@ -8,6 +8,7 @@ import thumbSpotifyRecommender from '../public/images/spotify.jpg'
 import thumbDog from '../public/images/dog.png'
 import thumbLawSum from '../public/images/lawsum.jpg'
 import thumbAly from '../public/images/aly.png'
+import thumbPyScratch from '../public/images/pyscratch.png'
 
 const Projects = () => {
   return (
@@ -32,7 +33,7 @@ const Projects = () => {
         </Section>
       <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={"10px"}>
         <Section delay={0.05}>
-          <WorkGridItem href="http://annote.live" title="Annote" thumbnail={thumbAnnote}>
+          <WorkGridItem href="http://annote.live" title="Annote." thumbnail={thumbAnnote}>
             Live transcription note taking app for students with the ability to record
               and summarize lectures. First Place Overall and Best Accessibility Hack @ HackUIowa 2022.
           </WorkGridItem>
@@ -59,11 +60,11 @@ const Projects = () => {
         </Section>
           <Section delay={0.2}>
               <WorkGridItem
-                  href="https://github.com/brandon-nguyen-lam/LawSum"
-                  title="LawSum"
-                  thumbnail={thumbLawSum}
+                  href="https://pyscratch.vercel.app/"
+                  title="pyscratch"
+                  thumbnail={thumbPyScratch}
               >
-                  Simplifies complex legislature, employment contracts, and leases into easy to understand summaries.
+                  Scratch for adults, learn automation using blocks! Built using Google's Blockly.
               </WorkGridItem>
           </Section>
 
@@ -79,11 +80,11 @@ const Projects = () => {
           </Section>
           <Section delay={0.4}>
               <WorkGridItem
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  title="Cute Dog"
-                  thumbnail={thumbDog}
+                  href="https://github.com/brandon-nguyen-lam/LawSum"
+                  title="LawSum"
+                  thumbnail={thumbLawSum}
               >
-                  Here for symmetry. Click to see a cute dog video.
+                  Simplifies complex legislature, employment contracts, and leases into easy to understand summaries.
               </WorkGridItem>
           </Section>
 
