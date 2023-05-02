@@ -16,7 +16,7 @@ import ExperienceBar from '../components/experiencebar'
 import GraphemeSplitter from "grapheme-splitter";
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-import Model from '../components/test'
+import Model from '../components/new-frog'
 
 const DynamicTypeWriter = dynamic(() => import('typewriter-effect'), {
     ssr: false
