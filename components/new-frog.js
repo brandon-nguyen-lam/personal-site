@@ -32,26 +32,27 @@ const Frog = () => {
         });
     });
 
-    // Rotate the model every frame
+    // Set up a clock for time-based rotation
+    const clockRef = useRef(new THREE.Clock());
+
     useFrame(() => {
+        const delta = clockRef.current.getDelta(); // Get the time delta
         if (groupRef.current) {
-            groupRef.current.rotation.y += 0.01;
+            const speed = 0.5; // Rotation speed in radians per second
+            groupRef.current.rotation.y += speed * delta; // Apply time-based rotation
             groupRef.current.scale.set(5, 5, 5);
         }
     });
+
     const { camera } = useThree();
     camera.position.set(1, 2, 8);
-    return (
-        <group ref={groupRef} />
-    );
+    return <group ref={groupRef} />;
 };
 
 const Model = () => {
-
     return (
-        <Canvas height="100%" >
+        <Canvas height="100%">
             <pointLight position={[10, 10, 10]} />
-
             <Frog />
         </Canvas>
     );

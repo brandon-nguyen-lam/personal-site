@@ -46,10 +46,10 @@ const Page = () => {
             stringSplitter
         }}
         />
-          <Box height="100%">
-            <Model/>
-          </Box>
       </Box>
+        <Box height="100%">
+            <Model/>
+        </Box>
       <Box pt={5} display={{md: 'flex'}}>
         <Box flexGrow={1}>
           <Heading
