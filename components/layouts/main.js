@@ -4,14 +4,7 @@ import dynamic from 'next/dynamic'
 import Navbar from '../navbar'
 import { Container, Box, Spinner } from "@chakra-ui/react";
 import Footer from '../footer'
-import FrogLoader from "../frog-loader";
 
-const LazyFrog = dynamic(() => import('../frog-model'),
-    {
-        ssr: false,
-        loading: () => <FrogLoader/>
-    }
-)
 
 const Main = ({ children, router }) => {
   return (
