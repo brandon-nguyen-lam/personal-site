@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import React, { Suspense } from 'react'
-import dynamic from 'next/dynamic'
+import React from 'react'
 import Navbar from '../navbar'
-import { Container, Box, Spinner } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Footer from '../footer'
 
 

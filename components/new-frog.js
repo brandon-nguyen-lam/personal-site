@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Canvas, useFrame, useThree } from 'react-three-fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
@@ -11,7 +11,7 @@ const Frog = () => {
     const mtlLoader = new MTLLoader();
     mtlLoader.load('/frog.mtl', (materials) => {
         // Set the base path for the textures
-        materials.preload();
+        materials.preload();    
         materials.baseUrl = '';
 
         // Load the geometry for the model
