@@ -19,6 +19,48 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from './logo.js'
 import { Slant as Hamburger } from 'hamburger-react'
+import React, { useState } from 'react';
+
+function LinkWithAnimation({ href, color, children }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const linkStyle = {
+    color,
+    textDecoration: 'none',
+    position: 'relative',
+  };
+
+  const underlineStyle = {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: isHovered ? '100%' : '0%',
+    height: '2px',
+    background: '#5F967C',
+    transition: 'width 0.3s ease-in-out',
+  };
+
+  return (
+      <NextLink href={href} passHref>
+        <Box
+            style={linkStyle}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
+          {children}
+          <span style={underlineStyle} />
+        </Box>
+      </NextLink>
+  );
+}
 
 const Navbar = props => {
   return (
@@ -34,44 +76,29 @@ const Navbar = props => {
         <Logo />
 
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
-          flexGrow={1}
-          mt={{ base: 4, md: 0 }}
-          justifyContent="flex-end"
-          paddingLeft="120pt"
+            direction={{ base: 'column', md: 'row' }}
+            display={{ base: 'none', md: 'flex' }}
+            width={{ base: 'full', md: 'auto' }}
+            alignItems="center"
+            flexGrow={1}
+            mt={{ base: 4, md: 0 }}
+            justifyContent="flex-end"
+            paddingLeft="120pt"
         >
-          <Link
-            as={NextLink}
-            href="/projects"
-            color="black"
-            style={{ textDecorationColor: '#5F967C' }}
-            passHref
-          >
+          <LinkWithAnimation href="/projects" color="black">
             Projects
-          </Link>
-          <Link
-            as={NextLink}
-            href="/blog"
-            color="black"
-            style={{ textDecorationColor: '#5F967C' }}
-            passHref
-          >
+          </LinkWithAnimation>
+          <LinkWithAnimation href="/blog" color="black">
             Blog
-          </Link>
-          <Link
-            as={NextLink}
-            href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view"
-            color="black"
-            style={{ textDecorationColor: '#5F967C' }}
-            passHref
-            isExternal
+          </LinkWithAnimation>
+          <LinkWithAnimation
+              href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view"
+              color="black"
           >
             Resume
-          </Link>
+          </LinkWithAnimation>
         </Stack>
+
 
         <Box flex={1} align={'right'}>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

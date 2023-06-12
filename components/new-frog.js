@@ -73,7 +73,7 @@ const Frog = () => {
 
 const Model = () => {
   return (
-      <Canvas height="100%">
+      <Canvas height="100%"w>
         <pointLight position={[5, 5, 5]} />
         <pointLight position={[-5, -5, -5]} />
         <Frog />
