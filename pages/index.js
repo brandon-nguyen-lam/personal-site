@@ -5,9 +5,12 @@ import Layout from '../components/layouts/article'
 import ExperienceBar from '../components/experiencebar'
 import GraphemeSplitter from 'grapheme-splitter'
 import React from 'react'
-import Model from '../components/new-frog'
 import Typewriter from 'typewriter-effect'
+import dynamic from 'next/dynamic'
 
+const DynamicModel = dynamic(() => import('../components/new-frog'), {
+    ssr: false
+    })
 const Page = () => {
   const stringSplitter = string => {
     const splitter = new GraphemeSplitter()
@@ -39,7 +42,7 @@ const Page = () => {
           />
         </Box>
         <Box height="100%">
-          <Model />
+          <DynamicModel />
         </Box>
         <Box pt={5} display={{ md: 'flex' }}>
           <Box flexGrow={1}>
