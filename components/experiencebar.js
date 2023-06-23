@@ -41,10 +41,12 @@ const ExperienceBar = () => {
             NASA
           </Heading>
           <Heading as={'h4'} size={'sm'} mb={2}>
-            Incoming Software Engineer Intern
+            Software Engineer Intern
           </Heading>
           <Text>
-            I'll be working in Columbus, Ohio at the Glenn Research Center.
+            I helped develop NASA's Inventory Management Program.
+            This site helped manage the inventory of the International Space Station.
+            The site was built using JavaScript, Vue, Spring Boot, and Node.js.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement

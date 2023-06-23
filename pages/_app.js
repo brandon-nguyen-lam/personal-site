@@ -2,12 +2,7 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
-import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
-
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-    ssr: false
-});
 
 // Custom hook to check if the device is mobile
 const useMobileCheck = () => {
@@ -47,7 +42,6 @@ function Website({ Component, pageProps, router }) {
                     }}
                 >
                     <Component {...pageProps} key={router.route} />
-                    {!isMobile && <AnimatedCursor color="0, 0, 0" outerSize={0} />}
                 </AnimatePresence>
             </Layout>
         </Chakra>
