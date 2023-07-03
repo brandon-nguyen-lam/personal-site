@@ -2,45 +2,26 @@ import { Container, Box, Heading, Image } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
-import ExperienceBar from '../components/experiencebar'
-import GraphemeSplitter from 'grapheme-splitter'
 import React from 'react'
-import Typewriter from 'typewriter-effect'
 import dynamic from 'next/dynamic'
 
 const DynamicModel = dynamic(() => import('../components/new-frog'), {
     ssr: false
     })
+
+const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
+    ssr: false
+})
+
+const DynamicExperienceBar = dynamic(() => import('../components/experiencebar'), {
+    ssr: false
+})
 const Page = () => {
-  const stringSplitter = string => {
-    const splitter = new GraphemeSplitter()
-    return splitter.splitGraphemes(string)
-  }
 
   return (
     <Layout>
       <Container bg="white" paddingTop="15px">
-        <Box
-          fontSize={{ base: '28px', md: '35px' }}
-          justifyContent={'center'}
-          align="center"
-          fontFamily="Arial"
-        >
-          <Typewriter
-            options={{
-              strings: [
-                "👋 Hi, I'm Brandon Lam",
-                " 💻 I'm a Software Engineer",
-                '🐸 I like frogs'
-              ],
-              autoStart: true,
-              loop: true,
-              delay: '100',
-              deleteSpeed: 'natural',
-              stringSplitter
-            }}
-          />
-        </Box>
+        <DynamicTypeWriter/>
         <Box height="100%">
           <DynamicModel />
         </Box>
@@ -102,7 +83,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title" color={'black'}>
             Work Experience
           </Heading>
-          <ExperienceBar />
+          <DynamicExperienceBar />
         </Section>
       </Container>
     </Layout>
