@@ -18,6 +18,7 @@ const DynamicExperienceBar = dynamic(() => import('../components/experiencebar')
 })
 const Page = () => {
 
+
   return (
     <Layout>
       <Container bg="white" paddingTop="15px">
