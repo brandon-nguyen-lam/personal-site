@@ -46,7 +46,7 @@ const ExperienceBar = () => {
           <Text>
             I helped develop NASA's Inventory Management Program.
             This site helped manage the inventory of the International Space Station.
-            The site was built using JavaScript, Vue, Spring Boot, and Node.js.
+            The site was built using JavaScript, MySQL, Spring Boot, and Node.js.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
