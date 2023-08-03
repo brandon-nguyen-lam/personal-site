@@ -4,10 +4,6 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import React from 'react'
 import dynamic from 'next/dynamic'
-import {WorkGridItem} from "../components/grid-item";
-import {SimpleGrid} from "@chakra-ui/react";
-import codedexThumb from "../public/images/codedexThumb.png";
-import supermodelThumb from "../public/images/supermodelThumb.png";
 
 
 const DynamicModel = dynamic(() => import('../components/new-frog'), {
@@ -19,6 +15,10 @@ const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
 })
 
 const DynamicExperienceBar = dynamic(() => import('../components/experiencebar'), {
+    ssr: false
+})
+
+const DynamicCelebrityStatus = dynamic(() => import('../components/celebritystatus'), {
     ssr: false
 })
 const Page = () => {
@@ -91,29 +91,7 @@ const Page = () => {
           </Heading>
           <DynamicExperienceBar />
         </Section>
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title" color={'black'}>
-              Celebrity Status
-          </Heading>
-          <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
-            <Section delay={0.05}>
-              <WorkGridItem
-                  href="https://www.nasa.gov/sites/default/files/atoms/files/ps-03787-07_af_july_2023_508v2.pdf"
-                  title="NASA Supermodel"
-                  thumbnail={supermodelThumb}
-              >
-              </WorkGridItem>
-            </Section>
-            <Section delay={0.05}>
-              <WorkGridItem
-                  href="https://www.codedex.io/blog/a-day-in-the-life-swe-intern-nasa-brandon-lam"
-                  title="Codédex"
-                  thumbnail={codedexThumb}
-              >
-              </WorkGridItem>
-            </Section>
-          </SimpleGrid>
-        </Section>
+        <DynamicCelebrityStatus/>
       </Container>
     </Layout>
   )

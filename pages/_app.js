@@ -1,8 +1,9 @@
-import Layout from '../components/layouts/main'
-import Fonts from '../components/fonts'
-import { AnimatePresence } from 'framer-motion'
-import Chakra from '../components/chakra'
-import { useState, useEffect } from 'react'
+import React, { Suspense, useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import Chakra from "../components/chakra";
+import Fonts from "../components/fonts";
+import Layout from "../components/layouts/main";
+import LoadingScreen from "../components/loadingscreen";
 
 // Custom hook to check if the device is mobile
 const useMobileCheck = () => {
@@ -15,10 +16,10 @@ const useMobileCheck = () => {
 
         handleResize(); // Initial check
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
@@ -27,22 +28,36 @@ const useMobileCheck = () => {
 
 function Website({ Component, pageProps, router }) {
     const isMobile = useMobileCheck();
+    const [isLoading, setIsLoading] = useState(true);
+
+    // Simulate an async task like fetching data from an API
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1500); // Change the delay time as needed
+    }, []);
 
     return (
         <Chakra cookies={pageProps.cookies}>
             <Fonts />
             <Layout router={router}>
-                <AnimatePresence
-                    mode="wait"
-                    initial={true}
-                    onExitComplete={() => {
-                        if (typeof window !== 'undefined') {
-                            window.scrollTo({ top: 0 })
-                        }
-                    }}
-                >
-                    <Component {...pageProps} key={router.route} />
-                </AnimatePresence>
+                {isLoading ? (
+                    <LoadingScreen />
+                ) : (
+                    <Suspense fallback={<LoadingScreen />}>
+                        <AnimatePresence
+                            mode="wait"
+                            initial={true}
+                            onExitComplete={() => {
+                                if (typeof window !== "undefined") {
+                                    window.scrollTo({ top: 0 });
+                                }
+                            }}
+                        >
+                            <Component {...pageProps} key={router.route} />
+                        </AnimatePresence>
+                    </Suspense>
+                )}
             </Layout>
         </Chakra>
     );

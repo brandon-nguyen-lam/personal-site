@@ -92,7 +92,7 @@ const Navbar = props => {
             Blog
           </LinkWithAnimation>
           <LinkWithAnimation
-              href="https://drive.google.com/file/d/1A6jiZotU6p0mUwXf1SZb_kcmsmSKAk5e/view"
+              href="https://drive.google.com/file/d/1K19IJUcS_7acFjE_nmrdtC7dpTkY6hdp/view?usp=sharing"
               color="black"
           >
             Resume
