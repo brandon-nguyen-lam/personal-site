@@ -4,8 +4,9 @@ import Chakra from "../components/chakra";
 import Fonts from "../components/fonts";
 import Layout from "../components/layouts/main";
 import LoadingScreen from "../components/loadingscreen";
+import NProgressWrapper from "../components/progressbar";
+import '../styles/global.css';
 
-// Custom hook to check if the device is mobile
 const useMobileCheck = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -41,6 +42,7 @@ function Website({ Component, pageProps, router }) {
         <Chakra cookies={pageProps.cookies}>
             <Fonts />
             <Layout router={router}>
+                <NProgressWrapper />
                 {isLoading ? (
                     <LoadingScreen />
                 ) : (
