@@ -11,7 +11,7 @@ const CelebrityStatus = () => {
         <Heading as="h3" variant="section-title" color={'black'}>
             Celebrity Status
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
+        <SimpleGrid columns={[1, 1, 1]} gap={6} paddingTop={'10px'}>
             <Section delay={0.05}>
                 <WorkGridItem
                     href="https://www.nasa.gov/sites/default/files/atoms/files/ps-03787-07_af_july_2023_508v2.pdf"

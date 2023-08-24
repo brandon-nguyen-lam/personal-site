@@ -46,7 +46,7 @@ const ExperienceBar = () => {
           <Text>
             I helped develop NASA's Inventory Management Program.
             This site helped manage the inventory of the International Space Station.
-            The site was built using JavaScript, MySQL, Spring Boot, and Node.js.
+            The site was built using JavaScript, MySQL, GraphQL, and Node.js.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -104,7 +104,7 @@ const ExperienceBar = () => {
             I conducted market analysis on 12 different crypto games analyzing
             their size, potential, environment, and competition. I also stored
             and visualized data on over 1,000 companies in the eSports industry,
-            using SQL and Tableu. From that, I was able to conclude that over
+            using Python, SQL and Tableu. From that, I was able to conclude that over
             95% of eSports companies were not profitable and presented my
             findings on the future of eSports companies to the company CEO and
             CTO.

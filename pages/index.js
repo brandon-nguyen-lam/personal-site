@@ -1,9 +1,12 @@
-import { Container, Box, Heading, Image } from '@chakra-ui/react'
+import {Container, Box, Heading, Image, SimpleGrid} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import React from 'react'
 import dynamic from 'next/dynamic'
+import {WorkGridItem} from "../components/grid-item";
+import supermodelThumb from "../public/images/supermodelThumb.png";
+import codedexThumb from "../public/images/codedexThumb.png";
 
 
 const DynamicModel = dynamic(() => import('../components/new-frog'), {
@@ -18,9 +21,6 @@ const DynamicExperienceBar = dynamic(() => import('../components/experiencebar')
     ssr: false
 })
 
-const DynamicCelebrityStatus = dynamic(() => import('../components/celebritystatus'), {
-    ssr: false
-})
 const Page = () => {
 
 
@@ -91,7 +91,19 @@ const Page = () => {
           </Heading>
           <DynamicExperienceBar />
         </Section>
-        <DynamicCelebrityStatus/>
+        <Heading as="h3" variant="section-title" color={'black'}>
+          Check out this article about me!
+        </Heading>
+        <SimpleGrid columns={[1, 1, 1]} gap={6} paddingTop={'10px'}>
+            <Section delay={0.05}>
+              <WorkGridItem
+                  href="https://www.codedex.io/blog/a-day-in-the-life-swe-intern-nasa-brandon-lam"
+                  title="Codédex"
+                  thumbnail={codedexThumb}
+              >
+              </WorkGridItem>
+            </Section>
+        </SimpleGrid>
       </Container>
     </Layout>
   )
