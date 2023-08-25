@@ -25,17 +25,17 @@ export const GridItem = ({ children, id, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <Box w="100%" textAlign="center" transition="all 0.2s ease-in-out" _hover={{ transform: 'translateY(-2px)', color: '#4C7863' }}>
     <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
-        borderRadius="30px"
+
         style={{
           boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
-          borderRadius: '30px'
+          borderRadius: '30px',
         }}
       />
       <LinkOverlay href={href} target={'_blank'}>

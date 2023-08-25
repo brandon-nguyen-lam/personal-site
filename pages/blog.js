@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Center } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import {GridItem, WorkGridItem} from '../components/grid-item'
 
 import thumbMemories from '../public/images/memoriesthumbnail.jpg'
 import thumbTF2 from '../public/images/TF2.jpg'
@@ -27,18 +27,18 @@ const Blog = () => (
 
       <SimpleGrid columns={[1]} gap={6} paddingTop={'10px'}>
         <Section>
-          <GridItem
+          <WorkGridItem
             id="memories"
             title="Memories"
             thumbnail={thumbMemories}
-          ></GridItem>
+          ></WorkGridItem>
         </Section>
         <Section delay={0.2}>
-          <GridItem
+          <WorkGridItem
             id="tf2"
             title={'Competitive TF2'}
             thumbnail={thumbTF2}
-          ></GridItem>
+          ></WorkGridItem>
         </Section>
         {/*<Section>*/}
         {/*    <GridItem*/}

@@ -7,45 +7,34 @@ import LoadingScreen from "../components/loadingscreen";
 import NProgressWrapper from "../components/progressbar";
 import '../styles/global.css';
 
-const useMobileCheck = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768); // Adjust the threshold as needed
-        };
-
-        handleResize(); // Initial check
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
-    return isMobile;
-};
+// const useMobileCheck = () => {
+//     const [isMobile, setIsMobile] = useState(false);
+//
+//     useEffect(() => {
+//         const handleResize = () => {
+//             setIsMobile(window.innerWidth < 768); // Adjust the threshold as needed
+//         };
+//
+//         handleResize(); // Initial check
+//
+//         window.addEventListener("resize", handleResize);
+//
+//         return () => {
+//             window.removeEventListener("resize", handleResize);
+//         };
+//     }, []);
+//
+//     return isMobile;
+// };
 
 function Website({ Component, pageProps, router }) {
-    const isMobile = useMobileCheck();
-    const [isLoading, setIsLoading] = useState(true);
-
-    // Simulate an async task like fetching data from an API
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1500); // Change the delay time as needed
-    }, []);
+    // const isMobile = useMobileCheck();
 
     return (
         <Chakra cookies={pageProps.cookies}>
             <Fonts />
             <Layout router={router}>
                 <NProgressWrapper />
-                {isLoading ? (
-                    <LoadingScreen />
-                ) : (
                     <Suspense fallback={<LoadingScreen />}>
                         <AnimatePresence
                             mode="wait"
@@ -59,7 +48,6 @@ function Website({ Component, pageProps, router }) {
                             <Component {...pageProps} key={router.route} />
                         </AnimatePresence>
                     </Suspense>
-                )}
             </Layout>
         </Chakra>
     );
