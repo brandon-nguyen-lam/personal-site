@@ -7,6 +7,7 @@ import thumbRollingOddsPerLevel from '../public/images/TFT.jpg'
 import thumbSpotifyRecommender from '../public/images/spotify.jpg'
 import thumbDog from '../public/images/dog.png'
 import thumbLawSum from '../public/images/lawsum.jpg'
+import thumbCardForMe from '../public/images/cardfor.png'
 import thumbAly from '../public/images/aly.png'
 import thumbPyScratch from '../public/images/pyscratch.png'
 import Layout from "../components/layouts/article";
@@ -91,12 +92,12 @@ const Projects = () => {
           </Section>
           <Section delay={0.4}>
             <WorkGridItem
-              href="https://github.com/brandon-nguyen-lam/LawSum"
-              title="LawSum"
-              thumbnail={thumbLawSum}
+              href="https://github.com/MiniHacks/cardforme"
+              title="cardfor.me"
+              thumbnail={thumbCardForMe}
             >
-              Simplifies complex legislature, employment contracts, and leases
-              into easy to understand summaries.
+              Analyzes your transactions and recommends the best credit card based off of
+              your spending habits. Fourth Place @ HackUIowa 2023.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
