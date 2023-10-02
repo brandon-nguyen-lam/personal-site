@@ -44,9 +44,13 @@ const ExperienceBar = () => {
             Software Engineer Intern
           </Heading>
           <Text>
+            🚀 Inventory Management Program for the ISS
+          </Text>
+          <Text>
             I helped develop NASA's Inventory Management Program.
             This site helped manage the inventory of the International Space Station.
-            The site was built using JavaScript, MySQL, GraphQL, and Node.js.
+            I also mentored two high school students (Shoutout to Trinity and Alaina)
+            to redesign the frontend of the site.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -73,12 +77,13 @@ const ExperienceBar = () => {
             Software Engineer Intern
           </Heading>
           <Text>
+            🤖 Member Portal and Chatbot
+          </Text>
+          <Text>
             I helped in developing and fine-tuning a chatbot utilizing AI to
-            help customers with information related to their bank account that
-            was used by over 1,000 users daily and deployed on Microsoft Azure.
-            Additionally, I redesigned the interface for the company's website
-            and mobile app improving the accessibility and user experience
-            scores by 30% using React.
+            help customers with information related to their HSA account that
+            was used by over 1,000 users daily. I also moved some boxes around
+            on the frontend to make the site prettier.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -101,13 +106,13 @@ const ExperienceBar = () => {
             Data Analytics Intern
           </Heading>
           <Text>
-            I conducted market analysis on 12 different crypto games analyzing
-            their size, potential, environment, and competition. I also stored
-            and visualized data on over 1,000 companies in the eSports industry,
-            using Python, SQL and Tableu. From that, I was able to conclude that over
-            95% of eSports companies were not profitable and presented my
-            findings on the future of eSports companies to the company CEO and
-            CTO.
+            🎮 eSports Research
+          </Text>
+          <Text>
+            I analyzed data on over 1,000 eSports companies to help Mobalytics
+            determine which companies to partner with. From my research, I
+            concluded that only 5% of the companies were worth partnering with
+            and presented my findings to the CEO & CTO.
           </Text>
         </VerticalTimelineElement>
       </VerticalTimeline>

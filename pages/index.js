@@ -46,8 +46,7 @@ const Page = () => {
             </Heading>
             <Box color={'black'}>
               Aspiring Software Engineer. Currently a Junior at the University
-              of Minnesota - Twin Cities double majoring in Computer Science and
-              Data Science.
+              of Minnesota - Twin Cities studying Computer Science.
             </Box>
           </Box>
           <Box
