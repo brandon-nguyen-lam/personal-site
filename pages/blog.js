@@ -2,7 +2,9 @@ import { Container, Heading, SimpleGrid, Center } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import {GridItem, WorkGridItem} from '../components/grid-item'
+import NextLink from "next/link";
 
+import thumbTesla from '../public/images/teslalogo.jpg'
 import thumbMemories from '../public/images/memoriesthumbnail.jpg'
 import thumbTF2 from '../public/images/TF2.jpg'
 
@@ -26,19 +28,32 @@ const Blog = () => (
       <Center>Collection of thoughts from an illiterate CS major.</Center>
 
       <SimpleGrid columns={[1]} gap={6} paddingTop={'10px'}>
-        <Section>
+        <Section delay={0.1}>
+          <NextLink href="/blog/tesla">
+            <WorkGridItem
+                id="tesla"
+                title="Declining a Tesla Offer"
+                thumbnail={thumbTesla}
+            ></WorkGridItem>
+          </NextLink>
+        </Section>
+        <Section delay={0.1}>
+          <NextLink href="/blog/memories">
           <WorkGridItem
-            id="memories"
+            href="memories"
             title="Memories"
             thumbnail={thumbMemories}
           ></WorkGridItem>
+            </NextLink>
         </Section>
         <Section delay={0.2}>
+          <NextLink href="/blog/tf2">
           <WorkGridItem
             id="tf2"
             title={'Competitive TF2'}
             thumbnail={thumbTF2}
           ></WorkGridItem>
+          </NextLink>
         </Section>
         {/*<Section>*/}
         {/*    <GridItem*/}

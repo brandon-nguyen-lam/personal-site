@@ -50,6 +50,32 @@ export const WorkGridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
+export const WorkGridItemTwo = ({ children, href, title, thumbnail }) => (
+    <Box w="100%" textAlign="center">
+        <LinkBox cursor="pointer">
+            <Image
+                src={thumbnail}
+                alt={title}
+                className="grid-item-thumbnail"
+                placeholder="blur"
+
+                style={{
+                    boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
+                    borderRadius: '30px',
+                }}
+            />
+            <LinkOverlay href={href} target={'_blank'}>
+                <Text mt={2} fontSize={20} fontWeight="bold" color={'black'}>
+                    {title}
+                </Text>
+            </LinkOverlay>
+            <Text fontSize={14} color={'black'}>
+                {children}
+            </Text>
+        </LinkBox>
+    </Box>
+)
+
 export const GridItemStyle = () => (
   <Global
     styles={`

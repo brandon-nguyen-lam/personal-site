@@ -1,5 +1,5 @@
 import Section from "./section";
-import {Heading, SimpleGrid} from "@chakra-ui/react";
+import {Heading, SimpleGrid, AspectRatio} from "@chakra-ui/react";
 import {WorkGridItem} from "./grid-item";
 import supermodelThumb from "../public/images/supermodelThumb.png";
 import codedexThumb from "../public/images/codedexThumb.png";
@@ -27,6 +27,13 @@ const CelebrityStatus = () => {
                     thumbnail={codedexThumb}
                 >
                 </WorkGridItem>
+            </Section>
+            <Section delay={0.1}>
+                <AspectRatio>
+                    <iframe
+                        src="https://open.spotify.com/embed/episode/5RCcbEJvQyCpAL9EBVI1JB?utm_source=generator&theme=0"
+                    ></iframe>
+                </AspectRatio>
             </Section>
         </SimpleGrid>
     </Section>
