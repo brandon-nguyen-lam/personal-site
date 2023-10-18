@@ -4,9 +4,9 @@ import Section from '../components/section'
 import {GridItem, WorkGridItem} from '../components/grid-item'
 import NextLink from "next/link";
 
-import thumbTesla from '../public/images/teslalogo.jpg'
 import thumbMemories from '../public/images/memoriesthumbnail.jpg'
 import thumbTF2 from '../public/images/TF2.jpg'
+import thumbRewind from '../public/images/rewind.png'
 
 const Blog = () => (
   <Layout title="Blog">
@@ -29,11 +29,11 @@ const Blog = () => (
 
       <SimpleGrid columns={[1]} gap={6} paddingTop={'10px'}>
         <Section delay={0.1}>
-          <NextLink href="/blog/tesla">
+          <NextLink href="/blog/recap">
             <WorkGridItem
-                id="tesla"
-                title="Declining a Tesla Offer"
-                thumbnail={thumbTesla}
+                id="recap"
+                title="2022-2023 Internship Search Recap"
+                thumbnail={thumbRewind}
             ></WorkGridItem>
           </NextLink>
         </Section>

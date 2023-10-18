@@ -1,10 +1,10 @@
-import { Box, Container, Center, Heading, VStack, Link } from '@chakra-ui/react'
+import {Box, Center, Container, Heading, Link, VStack} from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import Image from 'next/image'
 
-const Memories = () => (
-    <Layout title="tesla">
+const Recap = () => (
+    <Layout title="recap">
         <Container>
             <Heading
                 as="h3"
@@ -16,7 +16,7 @@ const Memories = () => (
                 textDecorationColor={'#5F967C'}
                 color={'black'}
             >
-                Declining a Tesla Offer
+                2022-2023 Internship Search Recap
             </Heading>
             <Section delay={0.1}>
                 <Center>
@@ -27,12 +27,6 @@ const Memories = () => (
             </Section>
             <Section delay={0.3}>
                 <VStack>
-                    <Box>
-                        Today, I just declined an offer from Tesla. Am I an idiot? Maybe.
-                        Do I regret the decision? Not at all. This is in no way me trying to flex at
-                        all, and honestly, I feel happy. As I reflect on the past year of being a CS student,
-                        it’s amazing to think of where I was a year ago.
-                    </Box>
                     <Box>
                         2022 was my first year in college, even though I did technically have two years
                         of PSEO at the University of Minnesota, it finally felt as if I was a real college
@@ -120,18 +114,9 @@ const Memories = () => (
                         I ended up getting an offer and having one of the most incredible summers of my life.
                     </Box>
                     <Box>
-                        That leads us to today, where I’ve been applying for
-                        internships and ended up getting an interview from Tesla.
-                        It was for a backend internship and during the Spring/Winter season.
-                        I had already kind of known that I was going to decline the offer if
-                        I had gotten it because I would much rather spend the semester with my
-                        friends on campus than progressing my career.
-                    </Box>
-                    <Box>
                         It’s wild to think though, how in that one year,
                         I started off not knowing what LeetCode was,
-                        or having any personal projects to declining a
-                        Tesla offer because I’d rather spend time with friends.
+                        or having any personal projects.
                         It really has been a wild ride and I’m proud of myself.
                     </Box>
                     <Image src={"/images/sankeydiagram.png"} width={500} height={500}/>
@@ -142,4 +127,4 @@ const Memories = () => (
     </Layout>
 )
 
-export default Memories
+export default Recap

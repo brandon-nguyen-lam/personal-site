@@ -15,6 +15,42 @@ const ExperienceBar = () => {
         animate={true}
       >
         <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#5F967C', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
+            date="January 2024 - April 2024"
+            iconStyle={{
+              background: '#fff',
+              color: '#fff',
+              width: '48px',
+              height: '48px'
+            }}
+            icon={
+              <Box>
+                <Image
+                    padding="1px"
+                    paddingLeft="1px"
+                    background="white"
+                    borderRadius="50%"
+                    src={'images/teslalogo.jpg'}
+                />
+              </Box>
+            }
+        >
+          <Heading as="h3" size="md" mb={2}>
+            Tesla
+          </Heading>
+          <Heading as={'h4'} size={'sm'} mb={2}>
+            Software Engineer Intern
+          </Heading>
+          <Text>
+            🚗 Applications Engineering
+          </Text>
+          <Text>
+            Gonna do cool stuff in C#
+          </Text>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#5F967C', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
