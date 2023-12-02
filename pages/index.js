@@ -1,4 +1,4 @@
-import {Container, Box, Heading, Image, SimpleGrid} from '@chakra-ui/react'
+import {Container, Box, Heading, Image, SimpleGrid, Spinner, Center} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
@@ -10,7 +10,16 @@ import codedexThumb from "../public/images/codedexThumb.png";
 
 
 const DynamicModel = dynamic(() => import('../components/new-frog'), {
-    ssr: false
+    ssr: false,
+    loading: () => <Center paddingTop='10'>
+      <Spinner
+          thickness='4px'
+          speed='0.65s'
+          emptyColor='gray.200'
+          color='green.500'
+          size='xl'
+      />
+    </Center>,
     })
 
 const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
@@ -29,7 +38,7 @@ const Page = () => {
       <Container bg="white" paddingTop="15px">
         <DynamicTypeWriter/>
         <Box height="100%">
-          {/*<DynamicModel />*/}
+          <DynamicModel />
         </Box>
         <Box pt={5} display={{ md: 'flex' }}>
           <Box flexGrow={1}>
