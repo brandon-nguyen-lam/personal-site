@@ -29,7 +29,7 @@ const Page = () => {
       <Container bg="white" paddingTop="15px">
         <DynamicTypeWriter/>
         <Box height="100%">
-          <DynamicModel />
+          {/*<DynamicModel />*/}
         </Box>
         <Box pt={5} display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -45,8 +45,7 @@ const Page = () => {
               Brandon Lam
             </Heading>
             <Box color={'black'}>
-              Aspiring Software Engineer. Currently a Junior at the University
-              of Minnesota - Twin Cities studying Computer Science.
+              Junior at the University of Minnesota - Twin Cities studying Computer Science and a fifth grade spelling bee champion.
             </Box>
           </Box>
           <Box
@@ -74,13 +73,10 @@ const Page = () => {
             About Me
           </Heading>
           <Paragraph>
-            Growing up, I always knew that engineering was my passion, so I
-            participated in a variety of extracurriculars like Robotics, Science
-            Olympiad, Model Rocketry, and volunteering at the Science Museum of
-            Minnesota. After taking my first CS class, I fell in love with it
-            and that's led me to where I am today. Outside of school, I enjoy
-            playing strategy games like TFT and Hearthstone, where I've been top
-            100 in North America for both games.
+            Hi, I'm Brandon! I'm passionate about building software that makes a difference in people's lives.
+            I took my first CS class two years ago and I've been hooked ever since. Outside of coding, I enjoy
+            playing strategy games like TFT and Hearthstone where I've been top 100 in both games. I also enjoy
+            long walks on the beach and playing Rasputin on Just Dance.
           </Paragraph>
         </Section>
 
