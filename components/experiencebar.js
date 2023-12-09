@@ -158,35 +158,6 @@ const ExperienceBar = () => {
             on the frontend to make the site prettier.
           </Text>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: '#5F967C', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
-          date="September 2022 - December 2022"
-          iconStyle={{
-            background: '#5F967C',
-            color: '#fff',
-            width: '48px',
-            height: '48px'
-          }}
-          icon={<Image borderRadius="50%" src={'images/mobalyticslogo.jpg'} />}
-        >
-          <Heading as="h3" size="md" mb={2}>
-            Mobalytics
-          </Heading>
-          <Heading as={'h4'} size={'sm'} mb={2}>
-            Data Analytics Intern
-          </Heading>
-          <Text>
-            🎮 eSports Research
-          </Text>
-          <Text>
-            I analyzed data on over 1,000 eSports companies to help Mobalytics
-            determine which companies to partner with. From my research, I
-            concluded that only 5% of the companies were worth partnering with
-            and presented my findings to the CEO & CTO.
-          </Text>
-        </VerticalTimelineElement>
       </VerticalTimeline>
     </Box>
   )
