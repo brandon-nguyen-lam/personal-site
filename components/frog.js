@@ -43,14 +43,14 @@ const Frog = () => {
 
             const target = new THREE.Vector3(0, 0.6, 0)
             const initialCameraPosition = new THREE.Vector3(
-                9,
-                9,
-                9
+                3,
+                3,
+                12
             )
 
             // 640 -> 240
             // 8   -> 6
-            const scale = scH * 0.0001 + 1.2
+            const scale = scH * 0.0001 + 1.05
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
@@ -124,9 +124,7 @@ const Frog = () => {
 
     return (
         // <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
-        <div ref={refContainer} style={{ width: '100%', height: '32vh' }}>
-            {loading && <p>Loading...</p>}
-        </div>
+        <div ref={refContainer} style={{ width: '100%', height: '32vh' }}/>
     )
 
 }

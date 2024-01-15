@@ -37,7 +37,7 @@ const Page = () => {
     <Layout>
       <Container bg="white" paddingTop="15px">
         <DynamicTypeWriter/>
-        <Box height="100%">
+        <Box height="100%" marginTop={'-5px'}>
           <DynamicModel />
         </Box>
         <Box pt={5} display={{ md: 'flex' }}>
