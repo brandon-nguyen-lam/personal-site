@@ -14,7 +14,7 @@ const CelebrityStatus = () => {
         <SimpleGrid columns={[1, 1, 1]} gap={6} paddingTop={'10px'}>
             <Section delay={0.05}>
                 <WorkGridItem
-                    href="https://www.nasa.gov/sites/default/files/atoms/files/ps-03787-07_af_july_2023_508v2.pdf"
+                    href="https://www.nasa.gov/wp-content/uploads/2023/07/ps-03787-07-af-july-2023-508v2.pdf"
                     title="NASA Supermodel"
                     thumbnail={supermodelThumb}
                 >

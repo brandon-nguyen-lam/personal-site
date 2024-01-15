@@ -9,7 +9,7 @@ import supermodelThumb from "../public/images/supermodelThumb.png";
 import codedexThumb from "../public/images/codedexThumb.png";
 
 
-const DynamicModel = dynamic(() => import('../components/new-frog'), {
+const DynamicModel = dynamic(() => import('../components/frog'), {
     ssr: false,
     loading: () => <Center paddingTop='10'>
       <Spinner
