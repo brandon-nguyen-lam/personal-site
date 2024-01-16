@@ -14,42 +14,42 @@ const ExperienceBar = () => {
         layout={'1-column-left'}
         animate={true}
       >
-        {/*<VerticalTimelineElement*/}
-        {/*    className="vertical-timeline-element--work"*/}
-        {/*    contentStyle={{ background: '#5F967C', color: '#fff' }}*/}
-        {/*    contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}*/}
-        {/*    date="May 2024 - August 2024"*/}
-        {/*    iconStyle={{*/}
-        {/*      background: '#fff',*/}
-        {/*      color: '#fff',*/}
-        {/*      width: '48px',*/}
-        {/*      height: '48px'*/}
-        {/*    }}*/}
-        {/*    icon={*/}
-        {/*      <Box>*/}
-        {/*        <Image*/}
-        {/*            padding="1px"*/}
-        {/*            paddingLeft="1px"*/}
-        {/*            background="white"*/}
-        {/*            borderRadius="50%"*/}
-        {/*            src={'images/atlassianlogo.png'}*/}
-        {/*        />*/}
-        {/*      </Box>*/}
-        {/*    }*/}
-        {/*>*/}
-        {/*  <Heading as="h3" size="md" mb={2}>*/}
-        {/*    Atlassian*/}
-        {/*  </Heading>*/}
-        {/*  <Heading as={'h4'} size={'sm'} mb={2}>*/}
-        {/*    Software Engineer Intern*/}
-        {/*  </Heading>*/}
-        {/*  <Text>*/}
-        {/*    😎 Gonna make Jira great again*/}
-        {/*  </Text>*/}
-        {/*  <Text>*/}
-        {/*    I don't know my team yet*/}
-        {/*  </Text>*/}
-        {/*</VerticalTimelineElement>*/}
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#5F967C', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #5F967C' }}
+            date="May 2024 - August 2024"
+            iconStyle={{
+              background: '#fff',
+              color: '#fff',
+              width: '48px',
+              height: '48px'
+            }}
+            icon={
+              <Box>
+                <Image
+                    padding="1px"
+                    paddingLeft="1px"
+                    background="white"
+                    borderRadius="50%"
+                    src={'images/meta.jpeg'}
+                />
+              </Box>
+            }
+        >
+          <Heading as="h3" size="md" mb={2}>
+            Meta
+          </Heading>
+          <Heading as={'h4'} size={'sm'} mb={2}>
+            Software Engineer Intern
+          </Heading>
+          <Text>
+            😎 My mom uses Facebook a lot so I had to get this offer for her
+          </Text>
+          <Text>
+            I don't know my team yet
+          </Text>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#5F967C', color: '#fff' }}
@@ -68,7 +68,7 @@ const ExperienceBar = () => {
                     paddingLeft="1px"
                     background="white"
                     borderRadius="50%"
-                    src={'images/teslalogo.jpg'}
+                    src={'images/tesla.jpeg'}
                 />
               </Box>
             }
@@ -104,7 +104,7 @@ const ExperienceBar = () => {
                 paddingLeft="1px"
                 background="white"
                 borderRadius="50%"
-                src={'images/nasa.png'}
+                src={'images/nasa.jpeg'}
               />
             </Box>
           }
@@ -138,7 +138,7 @@ const ExperienceBar = () => {
           }}
           icon={
             <Box>
-              <Image borderRadius="50%" src={'images/uhglogo.png'} />
+              <Image borderRadius="50%" src={'images/uhg.jpeg'} />
             </Box>
           }
         >
