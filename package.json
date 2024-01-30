@@ -17,6 +17,8 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@react-three/fiber": "^8.13.0",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.8",
     "framer-motion": "^10.12.12",
     "grapheme-splitter": "^1.0.4",
     "hamburger-react": "^2.5.0",
