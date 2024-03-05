@@ -1,42 +1,42 @@
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css'; // Import the CSS styles
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css' // Import the CSS styles
 
 function NProgressComponent() {
-    const route = useRouter();
+  const route = useRouter()
 
-    useEffect(() => {
-        NProgress.configure({ showSpinner: false });
+  useEffect(() => {
+    NProgress.configure({ showSpinner: false })
 
-        const nprogressStyles = `
+    const nprogressStyles = `
       /* Change the color of nprogress bar */
       #nprogress .bar {
         background: #5F967C;
       }
-    `;
-        NProgress.configure({ css: nprogressStyles });
+    `
+    NProgress.configure({ css: nprogressStyles })
 
-        const handleStart = () => {
-            NProgress.start();
-        };
+    const handleStart = () => {
+      NProgress.start()
+    }
 
-        const handleComplete = () => {
-            NProgress.done();
-        };
+    const handleComplete = () => {
+      NProgress.done()
+    }
 
-        route.events.on('routeChangeStart', handleStart);
-        route.events.on('routeChangeComplete', handleComplete);
-        route.events.on('routeChangeError', handleComplete);
+    route.events.on('routeChangeStart', handleStart)
+    route.events.on('routeChangeComplete', handleComplete)
+    route.events.on('routeChangeError', handleComplete)
 
-        return () => {
-            route.events.off('routeChangeStart', handleStart);
-            route.events.off('routeChangeComplete', handleComplete);
-            route.events.off('routeChangeError', handleComplete);
-        };
-    }, []);
+    return () => {
+      route.events.off('routeChangeStart', handleStart)
+      route.events.off('routeChangeComplete', handleComplete)
+      route.events.off('routeChangeError', handleComplete)
+    }
+  }, [])
 
-    return null;
+  return null
 }
 
-export default NProgressComponent;
+export default NProgressComponent

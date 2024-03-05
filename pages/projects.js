@@ -10,12 +10,12 @@ import thumbLawSum from '../public/images/lawsum.jpg'
 import thumbCardForMe from '../public/images/cardfor.png'
 import thumbAly from '../public/images/aly.png'
 import thumbPyScratch from '../public/images/pyscratch.png'
-import Layout from "../components/layouts/article";
+import Layout from '../components/layouts/article'
 
 const Projects = () => {
   return (
-      <Layout title="Projects">
-        <Container bg="white">
+    <Layout title="Projects">
+      <Container bg="white">
         <Section>
           <Center>
             <Heading
@@ -41,8 +41,8 @@ const Projects = () => {
               title="Annote."
               thumbnail={thumbAnnote}
             >
-              Live transcription note taking app for students with the ability to
-              record and summarize lectures. First Place Overall and Best
+              Live transcription note taking app for students with the ability
+              to record and summarize lectures. First Place Overall and Best
               Accessibility Hack @ HackUIowa 2022.
             </WorkGridItem>
           </Section>
@@ -54,8 +54,8 @@ const Projects = () => {
               thumbnail={thumbAly}
             >
               Website, chrome extension, and iOS app keeping you accountable one
-              awkward at text a time. First Place in Education and Top 3 Overall @
-              HackNYU 2023.
+              awkward at text a time. First Place in Education and Top 3 Overall
+              @ HackNYU 2023.
             </WorkGridItem>
           </Section>
 
@@ -86,8 +86,8 @@ const Projects = () => {
               title="TFT Simulator"
               thumbnail={thumbRollingOddsPerLevel}
             >
-              Replicates Riot Game's Teamfight Tactics and calculates the odds of
-              getting a desired unit using hypergeometric distribution.
+              Replicates Riot Game's Teamfight Tactics and calculates the odds
+              of getting a desired unit using hypergeometric distribution.
             </WorkGridItem>
           </Section>
           <Section delay={0.4}>
@@ -96,8 +96,8 @@ const Projects = () => {
               title="cardfor.me"
               thumbnail={thumbCardForMe}
             >
-              Analyzes your transactions and recommends the best credit card based off of
-              your spending habits. Fourth Place @ HackUIowa 2023.
+              Analyzes your transactions and recommends the best credit card
+              based off of your spending habits. Fourth Place @ HackUIowa 2023.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

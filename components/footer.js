@@ -8,7 +8,7 @@ const AnimatedLogo = ({ logo }) => {
       transition="all 0.2s ease-in-out"
       _hover={{ transform: 'translateY(-2px)', color: '#4C7863' }}
       fontSize="32px"
-        color="#5F967C"
+      color="#5F967C"
     />
   )
 }
@@ -57,7 +57,7 @@ const Footer = () => {
             fontSize={'sm'}
             color={'black'}
           >
-            site last updated 1/29/2024
+            site last updated 3/4/2024
           </Box>
         </Link>
       </Container>

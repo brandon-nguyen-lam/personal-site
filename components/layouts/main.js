@@ -3,9 +3,8 @@ import React from 'react'
 import Navbar from '../navbar'
 import { Box } from '@chakra-ui/react'
 import Footer from '../footer'
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 
 const Main = ({ children, router }) => {
   return (
@@ -24,9 +23,9 @@ const Main = ({ children, router }) => {
 
       <Box pt={14} bg="" justifyContent="space-between">
         {children}
-          <SpeedInsights />
-          <Analytics />
-          <Footer />
+        <SpeedInsights />
+        <Analytics />
+        <Footer />
       </Box>
     </Box>
   )

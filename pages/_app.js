@@ -1,11 +1,11 @@
-import React, { Suspense, useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
-import Chakra from "../components/chakra";
-import Fonts from "../components/fonts";
-import Layout from "../components/layouts/main";
-import LoadingScreen from "../components/loadingscreen";
-import NProgressWrapper from "../components/progressbar";
-import '../styles/global.css';
+import React, { Suspense, useState, useEffect } from 'react'
+import { AnimatePresence } from 'framer-motion'
+import Chakra from '../components/chakra'
+import Fonts from '../components/fonts'
+import Layout from '../components/layouts/main'
+import LoadingScreen from '../components/loadingscreen'
+import NProgressWrapper from '../components/progressbar'
+import '../styles/global.css'
 
 // const useMobileCheck = () => {
 //     const [isMobile, setIsMobile] = useState(false);
@@ -28,29 +28,29 @@ import '../styles/global.css';
 // };
 
 function Website({ Component, pageProps, router }) {
-    // const isMobile = useMobileCheck();
+  // const isMobile = useMobileCheck();
 
-    return (
-        <Chakra cookies={pageProps.cookies}>
-            <Fonts />
-            <Layout router={router}>
-                <NProgressWrapper />
-                    <Suspense fallback={<LoadingScreen />}>
-                        <AnimatePresence
-                            mode="wait"
-                            initial={true}
-                            onExitComplete={() => {
-                                if (typeof window !== "undefined") {
-                                    window.scrollTo({ top: 0 });
-                                }
-                            }}
-                        >
-                            <Component {...pageProps} key={router.route} />
-                        </AnimatePresence>
-                    </Suspense>
-            </Layout>
-        </Chakra>
-    );
+  return (
+    <Chakra cookies={pageProps.cookies}>
+      <Fonts />
+      <Layout router={router}>
+        <NProgressWrapper />
+        <Suspense fallback={<LoadingScreen />}>
+          <AnimatePresence
+            mode="wait"
+            initial={true}
+            onExitComplete={() => {
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0 })
+              }
+            }}
+          >
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Suspense>
+      </Layout>
+    </Chakra>
+  )
 }
 
-export default Website;
+export default Website

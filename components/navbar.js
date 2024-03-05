@@ -19,24 +19,24 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from './logo.js'
 import { Slant as Hamburger } from 'hamburger-react'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function LinkWithAnimation({ href, color, children }) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+    setIsHovered(true)
+  }
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+    setIsHovered(false)
+  }
 
   const linkStyle = {
     color,
     textDecoration: 'none',
-    position: 'relative',
-  };
+    position: 'relative'
+  }
 
   const underlineStyle = {
     position: 'absolute',
@@ -45,21 +45,21 @@ function LinkWithAnimation({ href, color, children }) {
     width: isHovered ? '100%' : '0%',
     height: '2px',
     background: '#5F967C',
-    transition: 'width 0.3s ease-in-out',
-  };
+    transition: 'width 0.3s ease-in-out'
+  }
 
   return (
-      <NextLink href={href} passHref>
-        <Box
-            style={linkStyle}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-          {children}
-          <span style={underlineStyle} />
-        </Box>
-      </NextLink>
-  );
+    <NextLink href={href} passHref>
+      <Box
+        style={linkStyle}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {children}
+        <span style={underlineStyle} />
+      </Box>
+    </NextLink>
+  )
 }
 
 const Navbar = props => {
@@ -76,14 +76,14 @@ const Navbar = props => {
         <Logo />
 
         <Stack
-            direction={{ base: 'column', md: 'row' }}
-            display={{ base: 'none', md: 'flex' }}
-            width={{ base: 'full', md: 'auto' }}
-            alignItems="center"
-            flexGrow={1}
-            mt={{ base: 4, md: 0 }}
-            justifyContent="flex-end"
-            paddingLeft="120pt"
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+          justifyContent="flex-end"
+          paddingLeft="120pt"
         >
           <LinkWithAnimation href="/projects" color="black">
             Projects
@@ -92,13 +92,12 @@ const Navbar = props => {
             Blog
           </LinkWithAnimation>
           <LinkWithAnimation
-              href="https://drive.google.com/file/d/1VXGVmRp6NFjdgwAGf6ixkTDMBaOE_A3z/view?usp=sharing"
-              color="black"
+            href="https://drive.google.com/file/d/1yu78PUyHnlfE1k2CusVroqqBaVq-sXre/view?usp=drive_link"
+            color="black"
           >
             Resume
           </LinkWithAnimation>
         </Stack>
-
 
         <Box flex={1} align={'right'}>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -126,7 +125,7 @@ const Navbar = props => {
                   </MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://drive.google.com/file/d/1VXGVmRp6NFjdgwAGf6ixkTDMBaOE_A3z/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1yu78PUyHnlfE1k2CusVroqqBaVq-sXre/view?usp=drive_link"
                   passHref
                 >
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
