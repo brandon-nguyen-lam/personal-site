@@ -74,8 +74,8 @@ const Page = () => {
             paddingTop={'10px'}
           >
             <Image
-              src={'images/blamPhoto.png'}
-              borderColor="black"
+              src={'images/blamphoto3.jpg'}
+              borderColor="#5F967C"
               borderWidth={2}
               borderStyle="solid"
               borderRadius="full"
