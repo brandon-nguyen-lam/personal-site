@@ -14,9 +14,9 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.6.1",
+    "@chakra-ui/theme-tools": "^2.1.2",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@react-three/fiber": "^8.13.0",
     "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.8",
     "framer-motion": "^10.12.12",
@@ -28,7 +28,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.147.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

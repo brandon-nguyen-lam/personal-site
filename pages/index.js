@@ -3,9 +3,7 @@ import {
   Box,
   Heading,
   Image,
-  SimpleGrid,
-  Spinner,
-  Center
+  SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -15,19 +13,6 @@ import dynamic from 'next/dynamic'
 import { WorkGridItem } from '../components/grid-item'
 import supermodelThumb from '../public/images/supermodelThumb.png'
 import codedexThumb from '../public/images/codedexThumb.png'
-
-// const DynamicModel = dynamic(() => import('../components/frog'), {
-//     ssr: false,
-//     loading: () => <Center paddingTop='10'>
-//       <Spinner
-//           thickness='4px'
-//           speed='0.65s'
-//           emptyColor='gray.200'
-//           color='green.500'
-//           size='xl'
-//       />
-//     </Center>,
-//     })
 
 const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
   ssr: false
@@ -45,9 +30,6 @@ const Page = () => {
     <Layout>
       <Container bg="white" paddingTop="15px">
         <DynamicTypeWriter />
-        {/*<Box height="100%" marginTop={'-5px'}>*/}
-        {/*  <DynamicModel />*/}
-        {/*</Box>*/}
         <Box pt={5} display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading
