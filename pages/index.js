@@ -11,8 +11,9 @@ import Layout from '../components/layouts/article'
 import React from 'react'
 import dynamic from 'next/dynamic'
 import { WorkGridItem } from '../components/grid-item'
-import supermodelThumb from '../public/images/supermodelThumb.png'
 import codedexThumb from '../public/images/codedexThumb.png'
+import thumbNASA from "../public/images/nasaThumb.png"
+import thumbMusk from "../public/images/thumbMusk.jpg"
 
 const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
   ssr: false
@@ -82,7 +83,7 @@ const Page = () => {
           </Paragraph>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.2}>
           <Heading as="h3" variant="section-title" color={'black'}>
             Work Experience
           </Heading>
@@ -100,6 +101,30 @@ const Page = () => {
             ></WorkGridItem>
           </Section>
         </SimpleGrid>
+
+        <Heading as="h3" variant="section-title" color={'black'}>
+          Videos
+        </Heading>
+        <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
+          <Section delay={0.05}>
+            <WorkGridItem
+                href="https://youtu.be/WMZBAU781Lw"
+                title="NASA Internship Recap"
+                thumbnail={thumbNASA}
+            >
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.05}>
+            <WorkGridItem
+                href="https://youtu.be/X_qUt3Tkl8k?si=AXivgIGBuVhK3JRd"
+                title="Tesla SWE Intern Day in the Life"
+                thumbnail={thumbMusk}
+            >
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+
       </Container>
     </Layout>
   )
