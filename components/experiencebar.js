@@ -44,10 +44,11 @@ const ExperienceBar = () => {
             Software Engineer Intern
           </Heading>
           <Text>
-            😎 This offer is for every kid whose mom starts randomly streaming
-            on Facebook Live (my mom)
+            🛠️ Developer Infrastructure
           </Text>
-          <Text>I don't know my team yet</Text>
+          <Text>I made sure that Meta's products and services don't lag and
+          try to catch any possible performance related issues before they go live.
+          I also played a lot of ping pong.</Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

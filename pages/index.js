@@ -75,8 +75,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Hi, I'm Brandon! I'm passionate about building software that makes a
-            difference in people's lives. I took my first CS class two years ago
-            and I've been hooked ever since. Outside of coding, I enjoy playing
+            difference in people's lives. Outside of coding, I enjoy playing
             strategy games like TFT and Hearthstone where I've been top 100 in
             both games. I also enjoy long walks on the beach and playing
             Rasputin on Just Dance.

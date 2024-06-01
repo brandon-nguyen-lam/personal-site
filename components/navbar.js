@@ -92,7 +92,7 @@ const Navbar = props => {
             Blog
           </LinkWithAnimation>
           <LinkWithAnimation
-            href="https://drive.google.com/file/d/1yu78PUyHnlfE1k2CusVroqqBaVq-sXre/view?usp=drive_link"
+            href="https://drive.google.com/file/d/13QCZ8piCqa3PSEOgzHipbhFDRWUcMjKA/view?usp=sharing"
             color="black"
           >
             Resume
@@ -125,7 +125,7 @@ const Navbar = props => {
                   </MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://drive.google.com/file/d/1yu78PUyHnlfE1k2CusVroqqBaVq-sXre/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/13QCZ8piCqa3PSEOgzHipbhFDRWUcMjKA/view?usp=sharing"
                   passHref
                 >
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
