@@ -46,9 +46,9 @@ const ExperienceBar = () => {
           <Text>
             🛠️ Developer Infrastructure
           </Text>
-          <Text>I made sure that Meta's products and services don't lag and
-          try to catch any possible performance related issues before they go live.
-          I also played a lot of ping pong.</Text>
+          <Text>I used binary search on peoples commits to find performance regressions and automated the process
+            of finding the most optimal test configurations to reduce noise and increase signal strength.
+          I also lost a lot of money playing poker.</Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -81,9 +81,8 @@ const ExperienceBar = () => {
           </Heading>
           <Text>🚗 Applications Engineering</Text>
           <Text>
-            I worked on Tesla's internal timesheet tool 💀. I utilized C# and
-            .NET on the backend to create new API's and develop middleware for
-            the frontend. I was going to see Elon Musk in person but he lost a
+            I worked on Tesla's internal timesheet tool 💀. I developed new backend API's and middleware to unify
+            the system. I was going to see Elon Musk in person but he lost a
             $55 billion paycheck so he cancelled the meeting.
           </Text>
         </VerticalTimelineElement>

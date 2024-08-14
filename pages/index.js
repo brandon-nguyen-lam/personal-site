@@ -12,6 +12,7 @@ import React from 'react'
 import dynamic from 'next/dynamic'
 import { WorkGridItem } from '../components/grid-item'
 import codedexThumb from '../public/images/codedexThumb.png'
+import thumbMeta from "../public/images/thumbMeta.jpg"
 import thumbNASA from "../public/images/nasaThumb.png"
 import thumbMusk from "../public/images/thumbMusk.jpg"
 
@@ -105,6 +106,17 @@ const Page = () => {
           Videos
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
+
+          <Section delay={0.05}>
+            <WorkGridItem
+                href="https://youtu.be/Dn1SDRsaYFI?si=kFMC4FF_l7DLMwEI"
+                title="A Summer at Meta"
+                thumbnail={thumbMeta}
+            >
+            </WorkGridItem>
+          </Section>
+
+
           <Section delay={0.05}>
             <WorkGridItem
                 href="https://youtu.be/WMZBAU781Lw"
@@ -114,14 +126,14 @@ const Page = () => {
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.05}>
-            <WorkGridItem
-                href="https://youtu.be/X_qUt3Tkl8k?si=AXivgIGBuVhK3JRd"
-                title="Tesla SWE Intern Day in the Life"
-                thumbnail={thumbMusk}
-            >
-            </WorkGridItem>
-          </Section>
+          {/*<Section delay={0.05}>*/}
+          {/*  <WorkGridItem*/}
+          {/*      href="https://youtu.be/X_qUt3Tkl8k?si=AXivgIGBuVhK3JRd"*/}
+          {/*      title="Tesla SWE Intern Day in the Life"*/}
+          {/*      thumbnail={thumbMusk}*/}
+          {/*  >*/}
+          {/*  </WorkGridItem>*/}
+          {/*</Section>*/}
         </SimpleGrid>
 
       </Container>
