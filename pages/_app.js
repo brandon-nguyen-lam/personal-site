@@ -35,19 +35,19 @@ function Website({ Component, pageProps, router }) {
       <Fonts />
       <Layout router={router}>
         <NProgressWrapper />
-        <Suspense fallback={<LoadingScreen />}>
-          <AnimatePresence
-            mode="wait"
-            initial={true}
-            onExitComplete={() => {
-              if (typeof window !== 'undefined') {
-                window.scrollTo({ top: 0 })
-              }
-            }}
-          >
+        {/*<Suspense fallback={<LoadingScreen />}>*/}
+          {/*<AnimatePresence*/}
+          {/*  mode="wait"*/}
+          {/*  initial={true}*/}
+          {/*  onExitComplete={() => {*/}
+          {/*    if (typeof window !== 'undefined') {*/}
+          {/*      window.scrollTo({ top: 0 })*/}
+          {/*    }*/}
+          {/*  }}*/}
+          {/*>*/}
             <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
-        </Suspense>
+          {/*</AnimatePresence>*/}
+        {/*</Suspense>*/}
       </Layout>
     </Chakra>
   )
