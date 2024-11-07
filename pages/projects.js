@@ -37,7 +37,7 @@ const Projects = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
           <Section delay={0.05}>
             <WorkGridItem
-              href="http://annote.live"
+              href="https://github.com/MiniHacks/annote"
               title="Annote."
               thumbnail={thumbAnnote}
             >

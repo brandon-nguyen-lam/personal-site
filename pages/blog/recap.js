@@ -289,8 +289,35 @@ const Recap = () => (
         </Box>
         <Image src={'/images/sankeydiagram2.png'} width={500} height={500} />
         <Center>(2023-2024 stats)</Center>
+
+      </VStack>
+      <Heading as="h3" variant="section-title" color={'black'}>
+        2024-2025 - Junior year
+      </Heading>
+      <VStack>
+          <Box>
+            For my junior year, I was pretty set on returning to Meta since I had such a good time there. That being said, the return offer
+            was taking a very long time to come in so I started interviewing at other companies. I was honestly
+            pretty shocked to only receive 4 interviews with my current resume. That being said, all of the companies
+            where I passed the resume screen were very good. I ended up passing the resume screen for OpenAI, Jane Street, Databricks,
+            and Riot Games.
+          </Box>
+            <Box>
+            For Riot, I just cancelled the interview since they broke my heart and I got my return offer at Meta by then. For Databricks,
+              I somehow got rejected after the recruiter phone call but I didn't do the OA for them and still passed the screen so that was
+              pretty crazy. Jane Street, I just didn't do the interview because I can never see myself being happy if I work at a quant firm.
+              OpenAI was an OA and then the phone interview was genuinely the most insane question I've ever seen. Imagine a leetcode hard with like
+              4 different topics at once. My code had around 150 lines and it only solved half of the test cases. Definitely the hardest interview
+              I've ever done.
+            </Box>
+            <Box>
+              I ended up accepting my return offer at Meta for summer 2025 and I'm super excited to return!
+            </Box>
+        <Image src={'/images/sankey2025.png'} width={500} height={500} />
+        <Center>(2024-2025 stats)</Center>
       </VStack>
     </Container>
+
   </Layout>
 )
 
