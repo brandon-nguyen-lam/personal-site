@@ -18,9 +18,9 @@ const TypewriterComponent = () => {
       <Typewriter
         options={{
           strings: [
-            "👋 Hi, I'm Brandon Lam",
-            " 💻 I'm a Software Engineer",
-            '🐸 I like frogs'
+            "👋 hi, i'm brandon lam",
+            " 💻 i'm a software engineer",
+            '🐸 i like frogs',
           ],
           autoStart: true,
           loop: true,

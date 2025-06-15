@@ -49,7 +49,7 @@ const Logo = () => {
       <Image src={'/images/peepoSit.png'} width={10} height={10} />
       <AnimatedLink href={'/'} color="black">
         <Text fontFamily={'M PLUS Rounded 1c'} fontSize={'xl'} color={'black'}>
-          Brandon Lam
+          brandon lam
         </Text>
       </AnimatedLink>
     </HStack>

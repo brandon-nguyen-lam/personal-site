@@ -3,7 +3,7 @@ import {
   Box,
   Heading,
   Image,
-  SimpleGrid
+  SimpleGrid, Link
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -14,7 +14,7 @@ import { WorkGridItem } from '../components/grid-item'
 import codedexThumb from '../public/images/codedexThumb.png'
 import thumbMeta from "../public/images/thumbMeta.jpg"
 import thumbNASA from "../public/images/nasaThumb.png"
-import thumbMusk from "../public/images/thumbMusk.jpg"
+// import thumbMusk from "../public/images/thumbMusk.jpg"
 
 const DynamicTypeWriter = dynamic(() => import('../components/typewriter'), {
   ssr: false
@@ -43,11 +43,11 @@ const Page = () => {
               textDecorationColor={'#5F967C'}
               textDecorationThickness={'4px'}
             >
-              Brandon Lam
+              brandon lam
             </Heading>
             <Box color={'black'}>
-              Junior at the University of Minnesota - Twin Cities studying
-              Computer Science and a fifth grade spelling bee champion.
+              senior at the university of minnesota - twin cities studying
+              computer science and a fifth grade spelling bee champion.
             </Box>
           </Box>
           <Box
@@ -72,45 +72,45 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title" color={'black'}>
-            About Me
+            about me
           </Heading>
           <Paragraph>
-            Hi, I'm Brandon! I'm passionate about building software that makes a
-            difference in people's lives. Outside of coding, I enjoy playing
-            strategy games like TFT and Hearthstone where I've been top 100 in
-            both games. I also enjoy long walks on the beach and playing
-            Rasputin on Just Dance.
+            hey i’m brandon! i build software that (hopefully) makes people’s lives better.
+            outside of coding, i’m usually side questing - finding new food spots (follow me on{" "}
+            <Link href={"https://beliapp.co/app/brandonlam"} style={{  textDecoration: "underline" }}>beli</Link>),
+            making dumb videos, or just doing whatever sounds fun. i’ve been top 100 in tft and hearthstone,
+            which is exactly as useful as it sounds.
           </Paragraph>
         </Section>
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title" color={'black'}>
-            Work Experience
+            work experience
           </Heading>
           <DynamicExperienceBar />
         </Section>
         <Heading as="h3" variant="section-title" color={'black'}>
-          Check out this article about me!
+          check out this article about me!
         </Heading>
         <SimpleGrid columns={[1, 1, 1]} gap={6} paddingTop={'10px'}>
           <Section delay={0.05}>
             <WorkGridItem
               href="https://www.codedex.io/blog/a-day-in-the-life-swe-intern-nasa-brandon-lam"
-              title="Codédex"
+              title="codédex"
               thumbnail={codedexThumb}
             ></WorkGridItem>
           </Section>
         </SimpleGrid>
 
         <Heading as="h3" variant="section-title" color={'black'}>
-          Videos
+          videos
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6} paddingTop={'10px'}>
 
           <Section delay={0.05}>
             <WorkGridItem
                 href="https://youtu.be/Dn1SDRsaYFI?si=kFMC4FF_l7DLMwEI"
-                title="A Summer at Meta"
+                title="a summer at meta"
                 thumbnail={thumbMeta}
             >
             </WorkGridItem>
@@ -120,7 +120,7 @@ const Page = () => {
           <Section delay={0.05}>
             <WorkGridItem
                 href="https://youtu.be/WMZBAU781Lw"
-                title="NASA Internship Recap"
+                title="nasa internship recap"
                 thumbnail={thumbNASA}
             >
             </WorkGridItem>

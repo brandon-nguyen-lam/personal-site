@@ -2,21 +2,13 @@ import NextLink from 'next/link'
 import {
   Container,
   Box,
-  Link,
   Stack,
-  Heading,
-  Flex,
   Menu,
   MenuItem,
   MenuList,
   MenuButton,
   IconButton,
-  HStack,
-  Text,
-  Image,
-  useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from './logo.js'
 import { Slant as Hamburger } from 'hamburger-react'
 import React, { useState } from 'react'
@@ -86,16 +78,16 @@ const Navbar = props => {
           paddingLeft="120pt"
         >
           <LinkWithAnimation href="/projects" color="black">
-            Projects
+            projects
           </LinkWithAnimation>
           <LinkWithAnimation href="/blog" color="black">
-            Blog
+            blog
           </LinkWithAnimation>
           <LinkWithAnimation
-            href="https://drive.google.com/file/d/19YpT2F_KTKY_MqD8e6H27J3ARtQCvHVz/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tH9cOHPY4wrwLmlao7SwUDLArLldhrDB/view?usp=sharing"
             color="black"
           >
-            Resume
+            resume
           </LinkWithAnimation>
         </Stack>
 
@@ -111,25 +103,25 @@ const Navbar = props => {
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
-                    Home
+                    home
                   </MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
-                    Projects
+                    projects
                   </MenuItem>
                 </NextLink>
                 <NextLink href="/blog" passHref>
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
-                    Blog
+                    blog
                   </MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://drive.google.com/file/d/19YpT2F_KTKY_MqD8e6H27J3ARtQCvHVz/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1tH9cOHPY4wrwLmlao7SwUDLArLldhrDB/view?usp=sharing"
                   passHref
                 >
                   <MenuItem bg="white" _hover={{ bg: '#E4E8EF' }}>
-                    Resume
+                    resume
                   </MenuItem>
                 </NextLink>
               </MenuList>
