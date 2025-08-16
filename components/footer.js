@@ -57,7 +57,7 @@ const Footer = () => {
             fontSize={'sm'}
             color={'black'}
           >
-            site last updated 06/14/2025
+            site last updated 08/15/2025
           </Box>
         </Link>
       </Container>
